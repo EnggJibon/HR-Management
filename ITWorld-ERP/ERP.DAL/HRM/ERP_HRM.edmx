@@ -1,0 +1,2309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PersonId" Type="bigint" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Address2" Type="nvarchar(max)" />
+          <Property Name="CountryId" Type="bigint" Nullable="false" />
+          <Property Name="State" Type="nvarchar(max)" />
+          <Property Name="City" Type="nvarchar" MaxLength="250" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="AnnualHoliday">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AnnualHolidayCategoryId" Type="bigint" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Day" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="AnnualHolidayCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Year" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Designation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeCode" Type="varchar" MaxLength="20" />
+          <Property Name="CategoryId" Type="bigint" Nullable="false" />
+          <Property Name="DepartmentId" Type="bigint" Nullable="false" />
+          <Property Name="DesignationId" Type="bigint" Nullable="false" />
+          <Property Name="SupervisorId" Type="bigint" />
+          <Property Name="ApproverId" Type="bigint" />
+          <Property Name="IsDualApprovalApplied" Type="bit" Nullable="false" />
+          <Property Name="RosterId" Type="bigint" Nullable="false" />
+          <Property Name="JobLocation" Type="varchar" MaxLength="100" />
+          <Property Name="WorkLocation" Type="varchar" MaxLength="100" />
+          <Property Name="SalaryLocation" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="AppointmentLetterNo" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AppointmentLetterIssueDate" Type="datetime" Nullable="false" />
+          <Property Name="AppointmentLetterJoinDate" Type="datetime" Nullable="false" />
+          <Property Name="JoiningLetterNo" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="JoiningDate" Type="datetime" Nullable="false" />
+          <Property Name="ProbationaryPeriodInDays" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="JobConfirmationDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeAttendanceInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="PunchInTime" Type="datetime" />
+          <Property Name="PunchOutTime" Type="datetime" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeEducationalQualification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Certification" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Institute" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Board" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="Duration" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PassingYear" Type="nvarchar" MaxLength="4" />
+          <Property Name="DivisionClassGPA" Type="nvarchar" MaxLength="10" />
+          <Property Name="Marks" Type="nvarchar" MaxLength="10" />
+          <Property Name="OutOf" Type="nvarchar" MaxLength="10" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeEmploymentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Organization" Type="nvarchar" MaxLength="200" />
+          <Property Name="OrganizationType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Position" Type="nvarchar" MaxLength="100" />
+          <Property Name="Responsibility" Type="nvarchar" MaxLength="300" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeFamilyMember">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Relation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Qualification" Type="nvarchar" MaxLength="100" />
+          <Property Name="Occupation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Organization" Type="nvarchar" MaxLength="100" />
+          <Property Name="Designation" Type="nvarchar" MaxLength="50" />
+          <Property Name="JobLocation" Type="nvarchar" MaxLength="100" />
+          <Property Name="NationalId" Type="nvarchar" MaxLength="10" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Passport" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressId" Type="bigint" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeHealthInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Age" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="Height" Type="nvarchar" MaxLength="10" />
+          <Property Name="Weight" Type="nvarchar" MaxLength="10" />
+          <Property Name="BloodGroup" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Disease" Type="nvarchar" MaxLength="100" />
+          <Property Name="DiseaseNote" Type="nvarchar" MaxLength="200" />
+          <Property Name="DiseaseStatus" Type="nvarchar" MaxLength="100" />
+          <Property Name="IdentifiedHealthSymbol" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeLeaveInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="AnnualHolidayCategoryId" Type="bigint" Nullable="false" />
+          <Property Name="WeekendCategoryId" Type="bigint" Nullable="false" />
+          <Property Name="LeavePolicyId" Type="bigint" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeLeaveRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="RequestDate" Type="datetime" Nullable="false" />
+          <Property Name="LeaveTypeId" Type="bigint" Nullable="false" />
+          <Property Name="LeaveFrom" Type="datetime" Nullable="false" />
+          <Property Name="LeaveTo" Type="datetime" Nullable="false" />
+          <Property Name="DaysCount" Type="tinyint" Nullable="false" />
+          <Property Name="Purpose" Type="varchar(max)" />
+          <Property Name="IsHalfDay" Type="bit" Nullable="false" />
+          <Property Name="IsAdjustment" Type="bit" Nullable="false" />
+          <Property Name="AdjustmentDate" Type="datetime" />
+          <Property Name="ApprovalStatusId" Type="bigint" Nullable="false" />
+          <Property Name="ApprovalDate" Type="datetime" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeNomineeInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Relation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Occupation" Type="nvarchar" MaxLength="50" />
+          <Property Name="Organization" Type="nvarchar" MaxLength="100" />
+          <Property Name="NationalId" Type="nvarchar" MaxLength="10" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Passport" Type="nvarchar" MaxLength="100" />
+          <Property Name="AddressId" Type="bigint" />
+          <Property Name="BenefitName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Percentage" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EmployeeReferenceInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Occupation" Type="varchar" MaxLength="100" />
+          <Property Name="Organization" Type="varchar" MaxLength="100" />
+          <Property Name="Designation" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="LeaveApprovalStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LeavePolicy">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PolicyName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+          <Property Name="EffectiveDate" Type="datetime" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="LeaveRequestType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RequestTypeName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="LeaveType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LeavePolicyId" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="NumberOfDays" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="PersonalInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="8" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="Gender" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="MaritalStatus" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="Religion" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Nationality" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="NationalId" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Passport" Type="nvarchar" MaxLength="100" />
+          <Property Name="Photo" Type="varchar(max)" />
+          <Property Name="Signature" Type="varchar(max)" />
+          <Property Name="MotherLanguage" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="RosterInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+          <Property Name="StartTime" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="EndTime" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Weekend">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WeekendCategoryId" Type="bigint" Nullable="false" />
+          <Property Name="Day" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsHalfDay" Type="bit" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <EntityType Name="WeekendCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="bigint" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="bigint" />
+        </EntityType>
+        <Association Name="FK_Address_PersonalInformation">
+          <End Role="PersonalInformation" Type="Self.PersonalInformation" Multiplicity="1" />
+          <End Role="Address" Type="Self.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonalInformation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnnualHoliday_AnnualHolidayCategory">
+          <End Role="AnnualHolidayCategory" Type="Self.AnnualHolidayCategory" Multiplicity="1" />
+          <End Role="AnnualHoliday" Type="Self.AnnualHoliday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnnualHolidayCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnnualHoliday">
+              <PropertyRef Name="AnnualHolidayCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Department">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Designation">
+          <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Designation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_EmployeeCategory">
+          <End Role="EmployeeCategory" Type="Self.EmployeeCategory" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_RosterInformation">
+          <End Role="RosterInformation" Type="Self.RosterInformation" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RosterInformation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="RosterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeEducationalQualification_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeEducationalQualification" Type="Self.EmployeeEducationalQualification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeEducationalQualification">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeEmploymentHistory _Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeEmploymentHistory" Type="Self.EmployeeEmploymentHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeEmploymentHistory">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeFamilyMember_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeFamilyMember" Type="Self.EmployeeFamilyMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeFamilyMember">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeHealthInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeHealthInformation" Type="Self.EmployeeHealthInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeHealthInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_AnnualHolidayCategory">
+          <End Role="AnnualHolidayCategory" Type="Self.AnnualHolidayCategory" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnnualHolidayCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="AnnualHolidayCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_LeavePolicy">
+          <End Role="LeavePolicy" Type="Self.LeavePolicy" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeavePolicy">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="LeavePolicyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_WeekendCategory">
+          <End Role="WeekendCategory" Type="Self.WeekendCategory" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekendCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="WeekendCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveRequest_LeaveApprovalStatus">
+          <End Role="LeaveApprovalStatus" Type="Self.LeaveApprovalStatus" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeaveApprovalStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="ApprovalStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeNomineeInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeNomineeInformation" Type="Self.EmployeeNomineeInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeNomineeInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeReferenceInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeReferenceInformation" Type="Self.EmployeeReferenceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeReferenceInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveRequest_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveRequest_LeaveType">
+          <End Role="LeaveType" Type="Self.LeaveType" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeaveType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="LeaveTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveType_LeavePolicy">
+          <End Role="LeavePolicy" Type="Self.LeavePolicy" Multiplicity="1" />
+          <End Role="LeaveType" Type="Self.LeaveType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeavePolicy">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LeaveType">
+              <PropertyRef Name="LeavePolicyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonalInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="PersonalInformation" Type="Self.PersonalInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PersonalInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Weekend_WeekendCategory">
+          <End Role="WeekendCategory" Type="Self.WeekendCategory" Multiplicity="1" />
+          <End Role="Weekend" Type="Self.Weekend" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekendCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Weekend">
+              <PropertyRef Name="WeekendCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="USP_GetEmployeeAttendanceInformationList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="HRM">
+          <Parameter Name="EmployeeId" Type="bigint" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+          <Parameter Name="Month" Type="bigint" Mode="In" />
+          <Parameter Name="Year" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="USP_GetEmployeeDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="HRM">
+          <Parameter Name="Id" Type="bigint" Mode="In" />
+          <Parameter Name="EmployeeCode" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="USP_GetEmployeeLeaveBalanceInformation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="HRM">
+          <Parameter Name="EmployeeId" Type="bigint" Mode="In" />
+          <Parameter Name="EmployeeCode" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="USP_GetEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="HRM" />
+        <EntityContainer Name="ModelsStoreContainer">
+          <EntitySet Name="Address" EntityType="Self.Address" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="AnnualHoliday" EntityType="Self.AnnualHoliday" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="AnnualHolidayCategory" EntityType="Self.AnnualHolidayCategory" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="Designation" EntityType="Self.Designation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeAttendanceInformation" EntityType="Self.EmployeeAttendanceInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeCategory" EntityType="Self.EmployeeCategory" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeEducationalQualification" EntityType="Self.EmployeeEducationalQualification" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeEmploymentHistory" EntityType="Self.EmployeeEmploymentHistory" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeFamilyMember" EntityType="Self.EmployeeFamilyMember" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeHealthInformation" EntityType="Self.EmployeeHealthInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeLeaveInformation" EntityType="Self.EmployeeLeaveInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeLeaveRequest" EntityType="Self.EmployeeLeaveRequest" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeNomineeInformation" EntityType="Self.EmployeeNomineeInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="EmployeeReferenceInformation" EntityType="Self.EmployeeReferenceInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="LeaveApprovalStatus" EntityType="Self.LeaveApprovalStatus" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="LeavePolicy" EntityType="Self.LeavePolicy" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="LeaveRequestType" EntityType="Self.LeaveRequestType" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="LeaveType" EntityType="Self.LeaveType" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="PersonalInformation" EntityType="Self.PersonalInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="RosterInformation" EntityType="Self.RosterInformation" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="Weekend" EntityType="Self.Weekend" Schema="HRM" store:Type="Tables" />
+          <EntitySet Name="WeekendCategory" EntityType="Self.WeekendCategory" Schema="HRM" store:Type="Tables" />
+          <AssociationSet Name="FK_Address_PersonalInformation" Association="Self.FK_Address_PersonalInformation">
+            <End Role="PersonalInformation" EntitySet="PersonalInformation" />
+            <End Role="Address" EntitySet="Address" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnnualHoliday_AnnualHolidayCategory" Association="Self.FK_AnnualHoliday_AnnualHolidayCategory">
+            <End Role="AnnualHolidayCategory" EntitySet="AnnualHolidayCategory" />
+            <End Role="AnnualHoliday" EntitySet="AnnualHoliday" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Department" Association="Self.FK_Employee_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Designation" Association="Self.FK_Employee_Designation">
+            <End Role="Designation" EntitySet="Designation" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_EmployeeCategory" Association="Self.FK_Employee_EmployeeCategory">
+            <End Role="EmployeeCategory" EntitySet="EmployeeCategory" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_RosterInformation" Association="Self.FK_Employee_RosterInformation">
+            <End Role="RosterInformation" EntitySet="RosterInformation" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeEducationalQualification_Employee" Association="Self.FK_EmployeeEducationalQualification_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeEducationalQualification" EntitySet="EmployeeEducationalQualification" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeEmploymentHistory _Employee" Association="Self.FK_EmployeeEmploymentHistory _Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeEmploymentHistory" EntitySet="EmployeeEmploymentHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeFamilyMember_Employee" Association="Self.FK_EmployeeFamilyMember_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeFamilyMember" EntitySet="EmployeeFamilyMember" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeHealthInformation_Employee" Association="Self.FK_EmployeeHealthInformation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeHealthInformation" EntitySet="EmployeeHealthInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_AnnualHolidayCategory" Association="Self.FK_EmployeeLeaveInformation_AnnualHolidayCategory">
+            <End Role="AnnualHolidayCategory" EntitySet="AnnualHolidayCategory" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_Employee" Association="Self.FK_EmployeeLeaveInformation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_LeavePolicy" Association="Self.FK_EmployeeLeaveInformation_LeavePolicy">
+            <End Role="LeavePolicy" EntitySet="LeavePolicy" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_WeekendCategory" Association="Self.FK_EmployeeLeaveInformation_WeekendCategory">
+            <End Role="WeekendCategory" EntitySet="WeekendCategory" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveRequest_LeaveApprovalStatus" Association="Self.FK_EmployeeLeaveRequest_LeaveApprovalStatus">
+            <End Role="LeaveApprovalStatus" EntitySet="LeaveApprovalStatus" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeNomineeInformation_Employee" Association="Self.FK_EmployeeNomineeInformation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeNomineeInformation" EntitySet="EmployeeNomineeInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeReferenceInformation_Employee" Association="Self.FK_EmployeeReferenceInformation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeReferenceInformation" EntitySet="EmployeeReferenceInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveRequest_Employee" Association="Self.FK_LeaveRequest_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveRequest_LeaveType" Association="Self.FK_LeaveRequest_LeaveType">
+            <End Role="LeaveType" EntitySet="LeaveType" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveType_LeavePolicy" Association="Self.FK_LeaveType_LeavePolicy">
+            <End Role="LeavePolicy" EntitySet="LeavePolicy" />
+            <End Role="LeaveType" EntitySet="LeaveType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonalInformation_Employee" Association="Self.FK_PersonalInformation_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="PersonalInformation" EntitySet="PersonalInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Weekend_WeekendCategory" Association="Self.FK_Weekend_WeekendCategory">
+            <End Role="WeekendCategory" EntitySet="WeekendCategory" />
+            <End Role="Weekend" EntitySet="Weekend" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PersonId" Type="Int64" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CountryId" Type="Int64" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="PostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="PersonalInformation" Relationship="Self.FK_Address_PersonalInformation" FromRole="Address" ToRole="PersonalInformation" />
+        </EntityType>
+        <EntityType Name="AnnualHoliday">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnnualHolidayCategoryId" Type="Int64" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="AnnualHolidayCategory" Relationship="Self.FK_AnnualHoliday_AnnualHolidayCategory" FromRole="AnnualHoliday" ToRole="AnnualHolidayCategory" />
+        </EntityType>
+        <EntityType Name="AnnualHolidayCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="AnnualHolidays" Relationship="Self.FK_AnnualHoliday_AnnualHolidayCategory" FromRole="AnnualHolidayCategory" ToRole="AnnualHoliday" />
+          <NavigationProperty Name="EmployeeLeaveInformations" Relationship="Self.FK_EmployeeLeaveInformation_AnnualHolidayCategory" FromRole="AnnualHolidayCategory" ToRole="EmployeeLeaveInformation" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Department" FromRole="Department" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Designation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_Designation" FromRole="Designation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CategoryId" Type="Int64" Nullable="false" />
+          <Property Name="DepartmentId" Type="Int64" Nullable="false" />
+          <Property Name="DesignationId" Type="Int64" Nullable="false" />
+          <Property Name="SupervisorId" Type="Int64" />
+          <Property Name="ApproverId" Type="Int64" />
+          <Property Name="IsDualApprovalApplied" Type="Boolean" Nullable="false" />
+          <Property Name="RosterId" Type="Int64" Nullable="false" />
+          <Property Name="JobLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="WorkLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SalaryLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AppointmentLetterNo" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AppointmentLetterIssueDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AppointmentLetterJoinDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="JoiningLetterNo" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="JoiningDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProbationaryPeriodInDays" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="JobConfirmationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Department" Relationship="Self.FK_Employee_Department" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Designation" Relationship="Self.FK_Employee_Designation" FromRole="Employee" ToRole="Designation" />
+          <NavigationProperty Name="EmployeeCategory" Relationship="Self.FK_Employee_EmployeeCategory" FromRole="Employee" ToRole="EmployeeCategory" />
+          <NavigationProperty Name="RosterInformation" Relationship="Self.FK_Employee_RosterInformation" FromRole="Employee" ToRole="RosterInformation" />
+          <NavigationProperty Name="EmployeeEducationalQualifications" Relationship="Self.FK_EmployeeEducationalQualification_Employee" FromRole="Employee" ToRole="EmployeeEducationalQualification" />
+          <NavigationProperty Name="EmployeeEmploymentHistories" Relationship="Self.FK_EmployeeEmploymentHistory__Employee" FromRole="Employee" ToRole="EmployeeEmploymentHistory" />
+          <NavigationProperty Name="EmployeeFamilyMembers" Relationship="Self.FK_EmployeeFamilyMember_Employee" FromRole="Employee" ToRole="EmployeeFamilyMember" />
+          <NavigationProperty Name="EmployeeHealthInformations" Relationship="Self.FK_EmployeeHealthInformation_Employee" FromRole="Employee" ToRole="EmployeeHealthInformation" />
+          <NavigationProperty Name="EmployeeLeaveInformations" Relationship="Self.FK_EmployeeLeaveInformation_Employee" FromRole="Employee" ToRole="EmployeeLeaveInformation" />
+          <NavigationProperty Name="EmployeeNomineeInformations" Relationship="Self.FK_EmployeeNomineeInformation_Employee" FromRole="Employee" ToRole="EmployeeNomineeInformation" />
+          <NavigationProperty Name="EmployeeReferenceInformations" Relationship="Self.FK_EmployeeReferenceInformation_Employee" FromRole="Employee" ToRole="EmployeeReferenceInformation" />
+          <NavigationProperty Name="EmployeeLeaveRequests" Relationship="Self.FK_LeaveRequest_Employee" FromRole="Employee" ToRole="EmployeeLeaveRequest" />
+          <NavigationProperty Name="PersonalInformations" Relationship="Self.FK_PersonalInformation_Employee" FromRole="Employee" ToRole="PersonalInformation" />
+        </EntityType>
+        <EntityType Name="EmployeeAttendanceInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PunchInTime" Type="DateTime" Precision="3" />
+          <Property Name="PunchOutTime" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+        </EntityType>
+        <EntityType Name="EmployeeCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_EmployeeCategory" FromRole="EmployeeCategory" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeEducationalQualification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Certification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Institute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Duration" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PassingYear" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="DivisionClassGPA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Marks" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="OutOf" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeEducationalQualification_Employee" FromRole="EmployeeEducationalQualification" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeEmploymentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Organization" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="OrganizationType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Position" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Responsibility" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeEmploymentHistory__Employee" FromRole="EmployeeEmploymentHistory" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeFamilyMember">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Relation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Qualification" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Organization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="JobLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NationalId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Passport" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AddressId" Type="Int64" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeFamilyMember_Employee" FromRole="EmployeeFamilyMember" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeHealthInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Age" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Height" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Weight" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="BloodGroup" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Disease" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DiseaseNote" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DiseaseStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IdentifiedHealthSymbol" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeHealthInformation_Employee" FromRole="EmployeeHealthInformation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeLeaveInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="AnnualHolidayCategoryId" Type="Int64" Nullable="false" />
+          <Property Name="WeekendCategoryId" Type="Int64" Nullable="false" />
+          <Property Name="LeavePolicyId" Type="Int64" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="AnnualHolidayCategory" Relationship="Self.FK_EmployeeLeaveInformation_AnnualHolidayCategory" FromRole="EmployeeLeaveInformation" ToRole="AnnualHolidayCategory" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeLeaveInformation_Employee" FromRole="EmployeeLeaveInformation" ToRole="Employee" />
+          <NavigationProperty Name="LeavePolicy" Relationship="Self.FK_EmployeeLeaveInformation_LeavePolicy" FromRole="EmployeeLeaveInformation" ToRole="LeavePolicy" />
+          <NavigationProperty Name="WeekendCategory" Relationship="Self.FK_EmployeeLeaveInformation_WeekendCategory" FromRole="EmployeeLeaveInformation" ToRole="WeekendCategory" />
+        </EntityType>
+        <EntityType Name="EmployeeLeaveRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="RequestDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LeaveTypeId" Type="Int64" Nullable="false" />
+          <Property Name="LeaveFrom" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LeaveTo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DaysCount" Type="Byte" Nullable="false" />
+          <Property Name="Purpose" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsHalfDay" Type="Boolean" Nullable="false" />
+          <Property Name="IsAdjustment" Type="Boolean" Nullable="false" />
+          <Property Name="AdjustmentDate" Type="DateTime" Precision="3" />
+          <Property Name="ApprovalStatusId" Type="Int64" Nullable="false" />
+          <Property Name="ApprovalDate" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_LeaveRequest_Employee" FromRole="EmployeeLeaveRequest" ToRole="Employee" />
+          <NavigationProperty Name="LeaveApprovalStatu" Relationship="Self.FK_EmployeeLeaveRequest_LeaveApprovalStatus" FromRole="EmployeeLeaveRequest" ToRole="LeaveApprovalStatus" />
+          <NavigationProperty Name="LeaveType" Relationship="Self.FK_LeaveRequest_LeaveType" FromRole="EmployeeLeaveRequest" ToRole="LeaveType" />
+        </EntityType>
+        <EntityType Name="EmployeeNomineeInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Relation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Organization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NationalId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Passport" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AddressId" Type="Int64" />
+          <Property Name="BenefitName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Percentage" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeNomineeInformation_Employee" FromRole="EmployeeNomineeInformation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeReferenceInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Occupation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Organization" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_EmployeeReferenceInformation_Employee" FromRole="EmployeeReferenceInformation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="LeaveApprovalStatu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EmployeeLeaveRequests" Relationship="Self.FK_EmployeeLeaveRequest_LeaveApprovalStatus" FromRole="LeaveApprovalStatus" ToRole="EmployeeLeaveRequest" />
+        </EntityType>
+        <EntityType Name="LeavePolicy">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PolicyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="EffectiveDate" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="EmployeeLeaveInformations" Relationship="Self.FK_EmployeeLeaveInformation_LeavePolicy" FromRole="LeavePolicy" ToRole="EmployeeLeaveInformation" />
+          <NavigationProperty Name="LeaveTypes" Relationship="Self.FK_LeaveType_LeavePolicy" FromRole="LeavePolicy" ToRole="LeaveType" />
+        </EntityType>
+        <EntityType Name="LeaveRequestType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RequestTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="LeaveType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LeavePolicyId" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NumberOfDays" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="EmployeeLeaveRequests" Relationship="Self.FK_LeaveRequest_LeaveType" FromRole="LeaveType" ToRole="EmployeeLeaveRequest" />
+          <NavigationProperty Name="LeavePolicy" Relationship="Self.FK_LeaveType_LeavePolicy" FromRole="LeaveType" ToRole="LeavePolicy" />
+        </EntityType>
+        <EntityType Name="PersonalInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BirthDate" Type="DateTime" Precision="3" />
+          <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Religion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nationality" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NationalId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Passport" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Signature" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MotherLanguage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Addresses" Relationship="Self.FK_Address_PersonalInformation" FromRole="PersonalInformation" ToRole="Address" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_PersonalInformation_Employee" FromRole="PersonalInformation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="RosterInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="StartTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EndTime" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_RosterInformation" FromRole="RosterInformation" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Weekend">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WeekendCategoryId" Type="Int64" Nullable="false" />
+          <Property Name="Day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsHalfDay" Type="Boolean" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="WeekendCategory" Relationship="Self.FK_Weekend_WeekendCategory" FromRole="Weekend" ToRole="WeekendCategory" />
+        </EntityType>
+        <EntityType Name="WeekendCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="Int64" />
+          <NavigationProperty Name="EmployeeLeaveInformations" Relationship="Self.FK_EmployeeLeaveInformation_WeekendCategory" FromRole="WeekendCategory" ToRole="EmployeeLeaveInformation" />
+          <NavigationProperty Name="Weekends" Relationship="Self.FK_Weekend_WeekendCategory" FromRole="WeekendCategory" ToRole="Weekend" />
+        </EntityType>
+        <Association Name="FK_Address_PersonalInformation">
+          <End Role="PersonalInformation" Type="Self.PersonalInformation" Multiplicity="1" />
+          <End Role="Address" Type="Self.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonalInformation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnnualHoliday_AnnualHolidayCategory">
+          <End Role="AnnualHolidayCategory" Type="Self.AnnualHolidayCategory" Multiplicity="1" />
+          <End Role="AnnualHoliday" Type="Self.AnnualHoliday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnnualHolidayCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnnualHoliday">
+              <PropertyRef Name="AnnualHolidayCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_AnnualHolidayCategory">
+          <End Role="AnnualHolidayCategory" Type="Self.AnnualHolidayCategory" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnnualHolidayCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="AnnualHolidayCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Department">
+          <End Role="Department" Type="Self.Department" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Designation">
+          <End Role="Designation" Type="Self.Designation" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Designation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DesignationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_EmployeeCategory">
+          <End Role="EmployeeCategory" Type="Self.EmployeeCategory" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmployeeCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_RosterInformation">
+          <End Role="RosterInformation" Type="Self.RosterInformation" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RosterInformation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="RosterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeEducationalQualification_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeEducationalQualification" Type="Self.EmployeeEducationalQualification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeEducationalQualification">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeEmploymentHistory__Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeEmploymentHistory" Type="Self.EmployeeEmploymentHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeEmploymentHistory">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeFamilyMember_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeFamilyMember" Type="Self.EmployeeFamilyMember" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeFamilyMember">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeHealthInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeHealthInformation" Type="Self.EmployeeHealthInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeHealthInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeNomineeInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeNomineeInformation" Type="Self.EmployeeNomineeInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeNomineeInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeReferenceInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeReferenceInformation" Type="Self.EmployeeReferenceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeReferenceInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveRequest_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonalInformation_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="PersonalInformation" Type="Self.PersonalInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PersonalInformation">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_LeavePolicy">
+          <End Role="LeavePolicy" Type="Self.LeavePolicy" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeavePolicy">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="LeavePolicyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveInformation_WeekendCategory">
+          <End Role="WeekendCategory" Type="Self.WeekendCategory" Multiplicity="1" />
+          <End Role="EmployeeLeaveInformation" Type="Self.EmployeeLeaveInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekendCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveInformation">
+              <PropertyRef Name="WeekendCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeLeaveRequest_LeaveApprovalStatus">
+          <End Role="LeaveApprovalStatus" Type="Self.LeaveApprovalStatu" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeaveApprovalStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="ApprovalStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveRequest_LeaveType">
+          <End Role="LeaveType" Type="Self.LeaveType" Multiplicity="1" />
+          <End Role="EmployeeLeaveRequest" Type="Self.EmployeeLeaveRequest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeaveType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmployeeLeaveRequest">
+              <PropertyRef Name="LeaveTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LeaveType_LeavePolicy">
+          <End Role="LeavePolicy" Type="Self.LeavePolicy" Multiplicity="1" />
+          <End Role="LeaveType" Type="Self.LeaveType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeavePolicy">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="LeaveType">
+              <PropertyRef Name="LeavePolicyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Weekend_WeekendCategory">
+          <End Role="WeekendCategory" Type="Self.WeekendCategory" Multiplicity="1" />
+          <End Role="Weekend" Type="Self.Weekend" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekendCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Weekend">
+              <PropertyRef Name="WeekendCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ERP_HRM" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Addresses" EntityType="Self.Address" />
+          <EntitySet Name="AnnualHolidays" EntityType="Self.AnnualHoliday" />
+          <EntitySet Name="AnnualHolidayCategories" EntityType="Self.AnnualHolidayCategory" />
+          <EntitySet Name="Departments" EntityType="Self.Department" />
+          <EntitySet Name="Designations" EntityType="Self.Designation" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="EmployeeAttendanceInformations" EntityType="Self.EmployeeAttendanceInformation" />
+          <EntitySet Name="EmployeeCategories" EntityType="Self.EmployeeCategory" />
+          <EntitySet Name="EmployeeEducationalQualifications" EntityType="Self.EmployeeEducationalQualification" />
+          <EntitySet Name="EmployeeEmploymentHistories" EntityType="Self.EmployeeEmploymentHistory" />
+          <EntitySet Name="EmployeeFamilyMembers" EntityType="Self.EmployeeFamilyMember" />
+          <EntitySet Name="EmployeeHealthInformations" EntityType="Self.EmployeeHealthInformation" />
+          <EntitySet Name="EmployeeLeaveInformations" EntityType="Self.EmployeeLeaveInformation" />
+          <EntitySet Name="EmployeeLeaveRequests" EntityType="Self.EmployeeLeaveRequest" />
+          <EntitySet Name="EmployeeNomineeInformations" EntityType="Self.EmployeeNomineeInformation" />
+          <EntitySet Name="EmployeeReferenceInformations" EntityType="Self.EmployeeReferenceInformation" />
+          <EntitySet Name="LeaveApprovalStatus" EntityType="Self.LeaveApprovalStatu" />
+          <EntitySet Name="LeavePolicies" EntityType="Self.LeavePolicy" />
+          <EntitySet Name="LeaveRequestTypes" EntityType="Self.LeaveRequestType" />
+          <EntitySet Name="LeaveTypes" EntityType="Self.LeaveType" />
+          <EntitySet Name="PersonalInformations" EntityType="Self.PersonalInformation" />
+          <EntitySet Name="RosterInformations" EntityType="Self.RosterInformation" />
+          <EntitySet Name="Weekends" EntityType="Self.Weekend" />
+          <EntitySet Name="WeekendCategories" EntityType="Self.WeekendCategory" />
+          <AssociationSet Name="FK_Address_PersonalInformation" Association="Self.FK_Address_PersonalInformation">
+            <End Role="PersonalInformation" EntitySet="PersonalInformations" />
+            <End Role="Address" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnnualHoliday_AnnualHolidayCategory" Association="Self.FK_AnnualHoliday_AnnualHolidayCategory">
+            <End Role="AnnualHolidayCategory" EntitySet="AnnualHolidayCategories" />
+            <End Role="AnnualHoliday" EntitySet="AnnualHolidays" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_AnnualHolidayCategory" Association="Self.FK_EmployeeLeaveInformation_AnnualHolidayCategory">
+            <End Role="AnnualHolidayCategory" EntitySet="AnnualHolidayCategories" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Department" Association="Self.FK_Employee_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Designation" Association="Self.FK_Employee_Designation">
+            <End Role="Designation" EntitySet="Designations" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_EmployeeCategory" Association="Self.FK_Employee_EmployeeCategory">
+            <End Role="EmployeeCategory" EntitySet="EmployeeCategories" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_RosterInformation" Association="Self.FK_Employee_RosterInformation">
+            <End Role="RosterInformation" EntitySet="RosterInformations" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeEducationalQualification_Employee" Association="Self.FK_EmployeeEducationalQualification_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeEducationalQualification" EntitySet="EmployeeEducationalQualifications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeEmploymentHistory__Employee" Association="Self.FK_EmployeeEmploymentHistory__Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeEmploymentHistory" EntitySet="EmployeeEmploymentHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeFamilyMember_Employee" Association="Self.FK_EmployeeFamilyMember_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeFamilyMember" EntitySet="EmployeeFamilyMembers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeHealthInformation_Employee" Association="Self.FK_EmployeeHealthInformation_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeHealthInformation" EntitySet="EmployeeHealthInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_Employee" Association="Self.FK_EmployeeLeaveInformation_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeNomineeInformation_Employee" Association="Self.FK_EmployeeNomineeInformation_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeNomineeInformation" EntitySet="EmployeeNomineeInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeReferenceInformation_Employee" Association="Self.FK_EmployeeReferenceInformation_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeReferenceInformation" EntitySet="EmployeeReferenceInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveRequest_Employee" Association="Self.FK_LeaveRequest_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonalInformation_Employee" Association="Self.FK_PersonalInformation_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="PersonalInformation" EntitySet="PersonalInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_LeavePolicy" Association="Self.FK_EmployeeLeaveInformation_LeavePolicy">
+            <End Role="LeavePolicy" EntitySet="LeavePolicies" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveInformation_WeekendCategory" Association="Self.FK_EmployeeLeaveInformation_WeekendCategory">
+            <End Role="WeekendCategory" EntitySet="WeekendCategories" />
+            <End Role="EmployeeLeaveInformation" EntitySet="EmployeeLeaveInformations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeLeaveRequest_LeaveApprovalStatus" Association="Self.FK_EmployeeLeaveRequest_LeaveApprovalStatus">
+            <End Role="LeaveApprovalStatus" EntitySet="LeaveApprovalStatus" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveRequest_LeaveType" Association="Self.FK_LeaveRequest_LeaveType">
+            <End Role="LeaveType" EntitySet="LeaveTypes" />
+            <End Role="EmployeeLeaveRequest" EntitySet="EmployeeLeaveRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LeaveType_LeavePolicy" Association="Self.FK_LeaveType_LeavePolicy">
+            <End Role="LeavePolicy" EntitySet="LeavePolicies" />
+            <End Role="LeaveType" EntitySet="LeaveTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Weekend_WeekendCategory" Association="Self.FK_Weekend_WeekendCategory">
+            <End Role="WeekendCategory" EntitySet="WeekendCategories" />
+            <End Role="Weekend" EntitySet="Weekends" />
+          </AssociationSet>
+          <FunctionImport Name="USP_GetEmployeeAttendanceInformationList" ReturnType="Collection(Models.USP_GetEmployeeAttendanceInformationList_Result)">
+            <Parameter Name="EmployeeId" Mode="In" Type="Int64" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="Month" Mode="In" Type="Int64" />
+            <Parameter Name="Year" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="USP_GetEmployeeDetails" ReturnType="Collection(Models.USP_GetEmployeeDetails_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="EmployeeCode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="USP_GetEmployeeLeaveBalanceInformation" ReturnType="Collection(Models.USP_GetEmployeeLeaveBalanceInformation_Result)">
+            <Parameter Name="EmployeeId" Mode="In" Type="Int64" />
+            <Parameter Name="EmployeeCode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="USP_GetEmployees" ReturnType="Collection(Models.USP_GetEmployees_Result)" />
+        </EntityContainer>
+        <ComplexType Name="USP_GetEmployeeAttendanceInformationList_Result">
+          <Property Type="Int64" Name="EmployeeId" Nullable="false" />
+          <Property Type="DateTime" Name="PunchInTime" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="PunchOutTime" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="USP_GetEmployeeDetails_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="EmployeeCode" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="161" />
+          <Property Type="Int64" Name="CategoryId" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+          <Property Type="Int64" Name="DepartmentId" Nullable="false" />
+          <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="DesignationId" Nullable="false" />
+          <Property Type="String" Name="DesignationName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="JoiningDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="USP_GetEmployeeLeaveBalanceInformation_Result">
+          <Property Type="Int64" Name="EmployeeId" Nullable="false" />
+          <Property Type="String" Name="EmployeeCode" Nullable="true" MaxLength="20" />
+          <Property Type="Int64" Name="LeavePolicyId" Nullable="false" />
+          <Property Type="String" Name="LeavePolicyName" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="LeaveTypeId" Nullable="false" />
+          <Property Type="String" Name="LeaveTypeName" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="AllocatedDays" Nullable="false" />
+          <Property Type="Int32" Name="EnjoyedDays" Nullable="false" />
+          <Property Type="Int32" Name="RemainingDays" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="USP_GetEmployees_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="EmployeeCode" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="161" />
+          <Property Type="Int64" Name="CategoryId" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+          <Property Type="Int64" Name="DepartmentId" Nullable="false" />
+          <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="DesignationId" Nullable="false" />
+          <Property Type="String" Name="DesignationName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="JoiningDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="ERP_HRM">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="Models.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AnnualHolidays">
+            <EntityTypeMapping TypeName="Models.AnnualHoliday">
+              <MappingFragment StoreEntitySet="AnnualHoliday">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AnnualHolidayCategoryId" ColumnName="AnnualHolidayCategoryId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AnnualHolidayCategories">
+            <EntityTypeMapping TypeName="Models.AnnualHolidayCategory">
+              <MappingFragment StoreEntitySet="AnnualHolidayCategory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="Models.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Designations">
+            <EntityTypeMapping TypeName="Models.Designation">
+              <MappingFragment StoreEntitySet="Designation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Models.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="SupervisorId" ColumnName="SupervisorId" />
+                <ScalarProperty Name="ApproverId" ColumnName="ApproverId" />
+                <ScalarProperty Name="IsDualApprovalApplied" ColumnName="IsDualApprovalApplied" />
+                <ScalarProperty Name="RosterId" ColumnName="RosterId" />
+                <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+                <ScalarProperty Name="WorkLocation" ColumnName="WorkLocation" />
+                <ScalarProperty Name="SalaryLocation" ColumnName="SalaryLocation" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AppointmentLetterNo" ColumnName="AppointmentLetterNo" />
+                <ScalarProperty Name="AppointmentLetterIssueDate" ColumnName="AppointmentLetterIssueDate" />
+                <ScalarProperty Name="AppointmentLetterJoinDate" ColumnName="AppointmentLetterJoinDate" />
+                <ScalarProperty Name="JoiningLetterNo" ColumnName="JoiningLetterNo" />
+                <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+                <ScalarProperty Name="ProbationaryPeriodInDays" ColumnName="ProbationaryPeriodInDays" />
+                <ScalarProperty Name="JobConfirmationDate" ColumnName="JobConfirmationDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeAttendanceInformations">
+            <EntityTypeMapping TypeName="Models.EmployeeAttendanceInformation">
+              <MappingFragment StoreEntitySet="EmployeeAttendanceInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="PunchInTime" ColumnName="PunchInTime" />
+                <ScalarProperty Name="PunchOutTime" ColumnName="PunchOutTime" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeCategories">
+            <EntityTypeMapping TypeName="Models.EmployeeCategory">
+              <MappingFragment StoreEntitySet="EmployeeCategory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeEducationalQualifications">
+            <EntityTypeMapping TypeName="Models.EmployeeEducationalQualification">
+              <MappingFragment StoreEntitySet="EmployeeEducationalQualification">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Certification" ColumnName="Certification" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Institute" ColumnName="Institute" />
+                <ScalarProperty Name="Board" ColumnName="Board" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="PassingYear" ColumnName="PassingYear" />
+                <ScalarProperty Name="DivisionClassGPA" ColumnName="DivisionClassGPA" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="OutOf" ColumnName="OutOf" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeEmploymentHistories">
+            <EntityTypeMapping TypeName="Models.EmployeeEmploymentHistory">
+              <MappingFragment StoreEntitySet="EmployeeEmploymentHistory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Organization" ColumnName="Organization" />
+                <ScalarProperty Name="OrganizationType" ColumnName="OrganizationType" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Responsibility" ColumnName="Responsibility" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeFamilyMembers">
+            <EntityTypeMapping TypeName="Models.EmployeeFamilyMember">
+              <MappingFragment StoreEntitySet="EmployeeFamilyMember">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Relation" ColumnName="Relation" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Organization" ColumnName="Organization" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="JobLocation" ColumnName="JobLocation" />
+                <ScalarProperty Name="NationalId" ColumnName="NationalId" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Passport" ColumnName="Passport" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeHealthInformations">
+            <EntityTypeMapping TypeName="Models.EmployeeHealthInformation">
+              <MappingFragment StoreEntitySet="EmployeeHealthInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="Disease" ColumnName="Disease" />
+                <ScalarProperty Name="DiseaseNote" ColumnName="DiseaseNote" />
+                <ScalarProperty Name="DiseaseStatus" ColumnName="DiseaseStatus" />
+                <ScalarProperty Name="IdentifiedHealthSymbol" ColumnName="IdentifiedHealthSymbol" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeLeaveInformations">
+            <EntityTypeMapping TypeName="Models.EmployeeLeaveInformation">
+              <MappingFragment StoreEntitySet="EmployeeLeaveInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="AnnualHolidayCategoryId" ColumnName="AnnualHolidayCategoryId" />
+                <ScalarProperty Name="WeekendCategoryId" ColumnName="WeekendCategoryId" />
+                <ScalarProperty Name="LeavePolicyId" ColumnName="LeavePolicyId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeLeaveRequests">
+            <EntityTypeMapping TypeName="Models.EmployeeLeaveRequest">
+              <MappingFragment StoreEntitySet="EmployeeLeaveRequest">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="LeaveTypeId" ColumnName="LeaveTypeId" />
+                <ScalarProperty Name="LeaveFrom" ColumnName="LeaveFrom" />
+                <ScalarProperty Name="LeaveTo" ColumnName="LeaveTo" />
+                <ScalarProperty Name="DaysCount" ColumnName="DaysCount" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="IsHalfDay" ColumnName="IsHalfDay" />
+                <ScalarProperty Name="IsAdjustment" ColumnName="IsAdjustment" />
+                <ScalarProperty Name="AdjustmentDate" ColumnName="AdjustmentDate" />
+                <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+                <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeNomineeInformations">
+            <EntityTypeMapping TypeName="Models.EmployeeNomineeInformation">
+              <MappingFragment StoreEntitySet="EmployeeNomineeInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Relation" ColumnName="Relation" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Organization" ColumnName="Organization" />
+                <ScalarProperty Name="NationalId" ColumnName="NationalId" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Passport" ColumnName="Passport" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="BenefitName" ColumnName="BenefitName" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeReferenceInformations">
+            <EntityTypeMapping TypeName="Models.EmployeeReferenceInformation">
+              <MappingFragment StoreEntitySet="EmployeeReferenceInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Organization" ColumnName="Organization" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LeaveApprovalStatus">
+            <EntityTypeMapping TypeName="Models.LeaveApprovalStatu">
+              <MappingFragment StoreEntitySet="LeaveApprovalStatus">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LeavePolicies">
+            <EntityTypeMapping TypeName="Models.LeavePolicy">
+              <MappingFragment StoreEntitySet="LeavePolicy">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PolicyName" ColumnName="PolicyName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LeaveRequestTypes">
+            <EntityTypeMapping TypeName="Models.LeaveRequestType">
+              <MappingFragment StoreEntitySet="LeaveRequestType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RequestTypeName" ColumnName="RequestTypeName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LeaveTypes">
+            <EntityTypeMapping TypeName="Models.LeaveType">
+              <MappingFragment StoreEntitySet="LeaveType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="LeavePolicyId" ColumnName="LeavePolicyId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="NumberOfDays" ColumnName="NumberOfDays" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonalInformations">
+            <EntityTypeMapping TypeName="Models.PersonalInformation">
+              <MappingFragment StoreEntitySet="PersonalInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="Religion" ColumnName="Religion" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="NationalId" ColumnName="NationalId" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Passport" ColumnName="Passport" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Signature" ColumnName="Signature" />
+                <ScalarProperty Name="MotherLanguage" ColumnName="MotherLanguage" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RosterInformations">
+            <EntityTypeMapping TypeName="Models.RosterInformation">
+              <MappingFragment StoreEntitySet="RosterInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Weekends">
+            <EntityTypeMapping TypeName="Models.Weekend">
+              <MappingFragment StoreEntitySet="Weekend">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="WeekendCategoryId" ColumnName="WeekendCategoryId" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+                <ScalarProperty Name="IsHalfDay" ColumnName="IsHalfDay" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WeekendCategories">
+            <EntityTypeMapping TypeName="Models.WeekendCategory">
+              <MappingFragment StoreEntitySet="WeekendCategory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="USP_GetEmployeeAttendanceInformationList" FunctionName="Models.Store.USP_GetEmployeeAttendanceInformationList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Models.USP_GetEmployeeAttendanceInformationList_Result">
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="PunchInTime" ColumnName="PunchInTime" />
+                <ScalarProperty Name="PunchOutTime" ColumnName="PunchOutTime" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="USP_GetEmployeeDetails" FunctionName="Models.Store.USP_GetEmployeeDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Models.USP_GetEmployeeDetails_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+                <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="USP_GetEmployeeLeaveBalanceInformation" FunctionName="Models.Store.USP_GetEmployeeLeaveBalanceInformation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Models.USP_GetEmployeeLeaveBalanceInformation_Result">
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="LeavePolicyId" ColumnName="LeavePolicyId" />
+                <ScalarProperty Name="LeavePolicyName" ColumnName="LeavePolicyName" />
+                <ScalarProperty Name="LeaveTypeId" ColumnName="LeaveTypeId" />
+                <ScalarProperty Name="LeaveTypeName" ColumnName="LeaveTypeName" />
+                <ScalarProperty Name="AllocatedDays" ColumnName="AllocatedDays" />
+                <ScalarProperty Name="EnjoyedDays" ColumnName="EnjoyedDays" />
+                <ScalarProperty Name="RemainingDays" ColumnName="RemainingDays" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="USP_GetEmployees" FunctionName="Models.Store.USP_GetEmployees">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Models.USP_GetEmployees_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+                <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

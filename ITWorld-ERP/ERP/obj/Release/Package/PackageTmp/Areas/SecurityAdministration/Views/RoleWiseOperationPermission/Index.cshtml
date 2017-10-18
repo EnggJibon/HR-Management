@@ -1,0 +1,72 @@
+﻿@using ERP.Security.ViewModel
+
+@model RoleWiseOperationPermissionViewModel
+
+@{
+    ViewBag.Title = "Role Wise Operation Permission Setup ";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Role Wise Operation Permission Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Role</label>
+                        @Html.HiddenFor(model => model.RoleWiseOperationPermission.Id)
+                        @Html.DropDownListFor(model => model.RoleWiseOperationPermission.RoleId, Model.RoleList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Screen</label>
+                        @Html.DropDownListFor(model => model.RoleWiseOperationPermission.ScreenOperationId, Model.ScreenOperationList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label> Access Permission</label>
+                        @Html.CheckBoxFor(model => model.RoleWiseOperationPermission.HaveAccess)
+                    </div>
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.RoleWiseOperationPermission.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Role Wise Operation Permission
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "RoleWiseOperationPermission")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "RoleWiseOperationPermission")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "RoleWiseOperationPermission")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "RoleWiseOperationPermission")"></div>
+@Scripts.Render("~/Scripts/Security/RoleWiseOperationPermission.js")

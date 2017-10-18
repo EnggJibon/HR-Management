@@ -1,0 +1,64 @@
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.Net4.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.csprojResolveAssemblyReference.cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.Net4.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.csprojResolveAssemblyReference.cache
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.csprojResolveAssemblyReference.cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.Net4.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Common.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.DAL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\ERP.Utilities.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\AutoMapper.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\bin\Debug\Ninject.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.csprojResolveAssemblyReference.cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.Common\obj\Debug\ERP.Common.pdb

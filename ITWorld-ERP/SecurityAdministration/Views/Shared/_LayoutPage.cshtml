@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*@Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/common.js"></script>
+    @RenderSection("scripts", false)
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.default.min.css")" rel="stylesheet" type="text/css" />*@
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.silver.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.dataviz.default.min.css")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("~/Scripts/kendo/2014.1.528/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.1.528/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.1.528/kendo.aspnetmvc.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
+
+</head>
+
+<body data-offset="40">
+    <header>
+        <div id="header-roof">
+            <div class="container content">
+                <div class="col-md-12">
+                    <div class="pull-left" style="margin-left: -30px; color: rgba(174, 52, 174, 0.42); text-shadow: 0 1px rgb(206, 139, 212);">
+                        <h3>Mapple Enterprise Resource Planning</h3>
+                    </div>
+                    <div class="pull-right" style="margin-right: -30px;">
+                        <br />
+                        <a href="#">Sign up</a>
+                        <span class="bar">|</span>
+                        <a href="#">Help</a>
+                        <span class="bar">|</span>
+                        @*<div id="headerBeforeLogin">*@
+                        @(!Convert.ToBoolean(Session["IsLogged"]) ? Html.Partial("_LoginPanel") : Html.Partial("_LogoutPanel"))
+                        @*</div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="header-body">
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    @if (Convert.ToBoolean(Session["IsLogged"]))
+                    {
+                        Html.RenderPartial("_Menu");
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="middle">
+        <div class="container content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-upper">
+            <div class="container content">
+                <fieldset class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <h3>Key Features</h3>
+                            <p>
+                                <ul>
+                                    <li>Manufacturing</li>
+                                    <li>Supply chain management</li>
+                                    <li>Financial management</li>
+                                    <li>Project management</li>
+                                    <li>Human resources/ human capital management</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Why Use ERP</h3>
+                            <p>
+                                - Efficient completion of everyday activities. <br />
+                                - Reduction of overhead costs.<br />
+                                - Elimination of data silos through the formulation of a single, centralized and accurate company data.<br />
+                                - Standardization of critical procedures to reduce redundant tasks that waste time and money.<br />
+                                - Accurate assessment of business needs to improve strategic planning.<br />
+                                - Improved resource management and allocation.
+                            </p>
+                        </div>
+                        <div class="col-md-2">
+                            <h3>Site Link</h3>
+                            <p>
+                                <a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">About Us</a>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div id="footer-lower">
+            <div class="container content">
+                <img src="~/Content/Images/itworld_logo.png" />&nbsp;&nbsp;
+                &copy;   <a href="http://itworldbd.net/" target="_blank">IT-World @DateTime.Now.Year. </a> All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document)
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿@using ERP.Security.ViewModel
+
+@model AdditionalScreenPermissionViewModel
+
+@{
+    ViewBag.Title = "Additional Screen Permission Setup ";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Additional Screen Permission Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>User</label>
+                        @Html.HiddenFor(model => model.AdditionalScreenPermission.Id)
+                        @Html.DropDownListFor(model => model.AdditionalScreenPermission.UserId, Model.UserList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Module</label>
+                        @Html.DropDownListFor(model => model.AdditionalScreenPermission.ModuleId, Model.ModuleList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Screen</label>
+                        @* @Html.DropDownListFor(model => model.AdditionalScreenPermission.ScreenId, Model.ScreenList, "--Select--", new { @class = "form-control input-sm" })*@
+                        @Html.DropDownList("AdditionalScreenPermission_ScreenId", Enumerable.Empty<SelectListItem>(), "--Select--", new { @id = "AdditionalScreenPermission_ScreenId", @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Start Date</label>
+                        @Html.TextBoxFor(model => model.AdditionalScreenPermission.StartDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>End Date</label>
+                        @Html.TextBoxFor(model => model.AdditionalScreenPermission.EndDate, new { style = "width: 100%;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Access Permission</label>
+                        <br />
+                        <input type="checkbox" id="chkCanRead" /><label style="padding-left: 5px;">Can Read</label>
+                        <input type="checkbox" id="chkCanCreate" /><label style="padding-left: 5px;">Can Add</label>
+                        <input type="checkbox" id="chkCanUpdate" /><label style="padding-left: 5px;">Can Modify</label>
+                        <input type="checkbox" id="chkCanDelete" /><label style="padding-left: 5px;">Can Delete</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Is Active</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="AdditionalScreenPermission_IsActive" />
+                            <label for="AdditionalScreenPermission_IsActive"></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Additional Screen Permission
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "AdditionalScreenPermission")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "AdditionalScreenPermission")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "AdditionalScreenPermission")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "AdditionalScreenPermission")"></div>
+<div id="get-screen-list-url" data-request-url="@Url.Action("GetScreenList", "AdditionalScreenPermission")"></div>
+@Scripts.Render("~/Scripts/Security/AdditionalScreenPermission.js")

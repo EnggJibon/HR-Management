@@ -1,0 +1,16 @@
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\AutoMapper.Net4.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.Common.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\AutoMapper.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.DAL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.Utilities.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\Ninject.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.DAL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\ERP.Utilities.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\AutoMapper.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\bin\Release\Ninject.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Release\ERP.Common.csprojResolveAssemblyReference.cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Release\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.Common\obj\Release\ERP.Common.pdb

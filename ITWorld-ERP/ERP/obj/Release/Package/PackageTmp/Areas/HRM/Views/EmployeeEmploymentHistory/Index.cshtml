@@ -1,0 +1,128 @@
+﻿@using ERP.HRM.ViewModel
+@model EmployeeEmploymentHistoryViewModel
+
+@{
+    ViewBag.Title = "Employee Employment History";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Information
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal" disabled="disabled">
+                <div class="divHighlight col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-6" style="display:none;">
+                            <label>Employee Id</label>
+                            @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.EmployeeId, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Code</label>
+                            @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Employee.EmployeeCode, Model.EmployeeEmploymentHistory.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Employee.EmployeeName, Model.EmployeeEmploymentHistory.Employee.EmployeeName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Department Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Employee.DepartmentName, Model.EmployeeEmploymentHistory.Employee.DepartmentName, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Designation Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Employee.DesignationName, Model.EmployeeEmploymentHistory.Employee.DesignationName, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Employment History
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.EmployeeEmploymentHistory.Id)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Organization</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Organization, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Organization Type</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.OrganizationType, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>StartDate</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.StartDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>EndDate</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.EndDate, new { style = "width: 100%;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Position</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Position, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Responsibility</label>
+                        @Html.TextBoxFor(model => model.EmployeeEmploymentHistory.Responsibility, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.EmployeeEmploymentHistory.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Employment History
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeEmploymentHistory")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeEmploymentHistory")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "EmployeeEmploymentHistory")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "EmployeeEmploymentHistory")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeEmploymentHistory.js")

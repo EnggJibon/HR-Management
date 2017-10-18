@@ -1,0 +1,98 @@
+﻿@using ERP.HRM.ViewModel
+
+@model WeekendViewModel
+
+
+@{
+    ViewBag.Title = "Weekend ";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+    }
+    @Html.Hidden("tokenHeader", TokenHeaderValue())
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Weekend Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.Weekend.Id)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>WeekendCategory</label>
+                        @Html.DropDownListFor(model => model.WeekendCategoryList, Model.WeekendCategoryList, "--Select--", new { @class = "form-control input-sm" })
+                        @*@Html.TextBoxFor(model => model.Weekend.WeekendCategoryId, new { @class = "form-control input-sm" })*@
+                    </div>
+                    <div class="col-md-6">
+                        <label>Day</label>
+                        @Html.DropDownListFor(model => model.WeekendHolidayDayList, Model.WeekendHolidayDayList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6"><br />
+                        <label>Is Half Day</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="Weekend_IsHalfDay" />
+                            <label for="Weekend_IsHalfDay"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6"><br/>
+                        <label>Is Active</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="Weekend_IsActive" />
+                            <label for="Weekend_IsActive"></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Weekend
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "Weekend")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "Weekend")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "Weekend")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "Weekend")"></div>
+
+@Scripts.Render("~/Scripts/HRM/Weekend.js")
+
+
+
+
+

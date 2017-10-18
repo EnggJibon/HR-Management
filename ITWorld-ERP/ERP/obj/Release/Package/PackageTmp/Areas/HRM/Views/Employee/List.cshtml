@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Employee List";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Employees
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("GetList", "Employee")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "Employee")"></div>
+<div id="details-info-url" data-request-url="@Url.Action("Index", "Employee")"></div>
+<div id="employeeLeaveInformationURL" data-request-url="@Url.Action("Index", "EmployeeLeaveInformation")"></div>
+<div id="employeeEmploymentHistoryURL" data-request-url="@Url.Action("Index", "EmployeeEmploymentHistory")"></div>
+<div id="employeeEducationalQualificationURL" data-request-url="@Url.Action("Index", "EmployeeEducationalQualification")"></div>
+<div id="employeeReferenceInformationURL" data-request-url="@Url.Action("Index", "EmployeeReferenceInformation")"></div>
+<div id="employeeNomineeInformationURL" data-request-url="@Url.Action("Index", "EmployeeNomineeInformation")"></div>
+<div id="employeeFamilyInformationURL" data-request-url="@Url.Action("Index", "EmployeeFamilyMember")"></div>
+<div id="employeeHealthInformationURL" data-request-url="@Url.Action("Index", "EmployeeHealthInformation")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeList.js")
+

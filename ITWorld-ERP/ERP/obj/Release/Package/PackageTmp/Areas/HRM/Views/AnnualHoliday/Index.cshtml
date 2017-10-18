@@ -1,0 +1,106 @@
+﻿@using ERP.HRM.ViewModel
+
+@model AnnualHolidayViewModel
+
+@{
+    ViewBag.Title = "Annual Holiday Setup";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Annual Holiday Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+
+        
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Title</label>
+                        @Html.HiddenFor(model => model.AnnualHoliday.Id)
+                        @Html.TextBoxFor(model => model.AnnualHoliday.Title, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6" >
+                        <label>Annual Holiday Category</label>
+                        @Html.DropDownListFor(model => model.AnnualHolidayCategoryList, Model.AnnualHolidayCategoryList, "--Select--", new { @class = "form-control input-sm"})
+
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <label>Holiday Type</label>
+                        @*@Html.TextBoxFor(model => model.AnnualHoliday.Type, new { @class = "form-control input-sm" })*@
+                        @Html.DropDownListFor(model => model.AnnualHolidayTypeList, Model.AnnualHolidayTypeList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    
+                    
+
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Day</label>
+                        @Html.DropDownListFor(model => model.AnnualHolidayDayList, Model.AnnualHolidayDayList, "--Select--", new { @class = "form-control input-sm" })
+                        @*@Html.TextBoxFor(model => model.AnnualHoliday.Day, new { @class = "form-control input-sm" })*@
+                    </div>
+                    <div class="col-md-6" style="width: 50%">
+                        <label>Date</label><br />
+                        @Html.TextBoxFor(model => model.AnnualHoliday.Date, new { @class = "form-control input-sm", style = "width: 99%;" })
+                       
+                    </div>
+                    
+
+                </div>
+                
+                
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Description</label>
+
+                        @Html.TextBoxFor(model => model.AnnualHoliday.Description, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6"><br />
+                        <label>Is Active</label>
+                        @Html.CheckBoxFor(model => model.AnnualHoliday.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of AnnualHoliday
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "AnnualHoliday")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "AnnualHoliday")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "AnnualHoliday")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "AnnualHoliday")"></div>
+
+@Scripts.Render("~/Scripts/HRM/AnnualHoliday.js")

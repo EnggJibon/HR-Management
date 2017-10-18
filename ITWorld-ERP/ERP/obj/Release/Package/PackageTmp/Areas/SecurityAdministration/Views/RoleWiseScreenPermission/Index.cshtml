@@ -1,0 +1,85 @@
+﻿@using ERP.Security.ViewModel
+
+@model RoleWiseScreenPermissionViewModel
+
+@{
+    ViewBag.Title = "Role Wise Screen Permission Setup ";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Role Wise Screen Permission Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Role</label>
+                        @Html.HiddenFor(model => model.RoleWiseScreenPermission.Id)
+                        @Html.DropDownListFor(model => model.RoleWiseScreenPermission.RoleId, Model.RoleList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Module</label>
+                        @Html.DropDownListFor(model => model.RoleWiseScreenPermission.ModuleId, Model.ModuleList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Screen</label>
+                        @* @Html.DropDownListFor(model => model.RoleWiseScreenPermission.ScreenId, Model.ScreenList, "--Select--", new { @class = "form-control input-sm" })*@
+                        @Html.DropDownList("RoleWiseScreenPermission_ScreenId", Enumerable.Empty<SelectListItem>(), "--Select--", new { @id = "RoleWiseScreenPermission_ScreenId", @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Access Permission</label>
+                        <br />
+                        <input type="checkbox" id="chkCanRead" /><label style="padding-left: 5px;">Can Read</label>
+                        <input type="checkbox" id="chkCanCreate" /><label style="padding-left: 5px;">Can Add</label>
+                        <input type="checkbox" id="chkCanUpdate" /><label style="padding-left: 5px;">Can Modify</label>
+                        <input type="checkbox" id="chkCanDelete" /><label style="padding-left: 5px;">Can Delete</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        <br />
+                        @Html.CheckBoxFor(model => model.RoleWiseScreenPermission.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Role Wise Screen Permission
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "RoleWiseScreenPermission")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "RoleWiseScreenPermission")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "RoleWiseScreenPermission")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "RoleWiseScreenPermission")"></div>
+<div id="get-screen-list-url" data-request-url="@Url.Action("GetScreenList", "RoleWiseScreenPermission")"></div>
+@Scripts.Render("~/Scripts/Security/RoleWiseScreenPermission.js")

@@ -1,0 +1,24 @@
+﻿
+<a id="signOutLink" class="btn-link">Sign Out</a>
+<div id="logout-url" data-request-url="@Url.Action("LogOut", "General", new { area = "" })"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var logouturl;
+        logouturl = $('#logout-url').data('request-url');
+
+        $('#signOutLink').click(function () {
+            $.ajax({
+                type: "POST",
+                url: logouturl,
+                cache: false,
+                success: function (data) {
+                    window.location = data.url;
+                    //location.reload("Index","Home");
+                },
+                error: function () {
+                }
+            });
+        });
+    });
+</script>

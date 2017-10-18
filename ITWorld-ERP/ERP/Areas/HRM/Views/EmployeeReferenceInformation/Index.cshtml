@@ -1,0 +1,131 @@
+﻿@*EmployeeReferenceInformation*@
+
+@using ERP.HRM.ViewModel
+@model EmployeeReferenceInformationViewModel
+
+
+@{
+    ViewBag.Title = "Employee Reference Information";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+    }    
+    @Html.Hidden("tokenHeader", TokenHeaderValue())
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Reference Information
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.EmployeeReferenceInformation.Id)
+        </div>
+        <div class="panel-body">            
+            <fieldset class="form-horizontal" disabled="disabled">
+                <div class="divHighlight col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-6" style="display:none;">
+                            <label>Employee Id</label>
+                            @Html.TextBoxFor(model => model.EmployeeReferenceInformation.EmployeeId, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Code</label>
+                            @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Employee.EmployeeCode, Model.EmployeeReferenceInformation.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Employee.EmployeeName, Model.EmployeeReferenceInformation.Employee.EmployeeName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Department Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Employee.DepartmentName, Model.EmployeeReferenceInformation.Employee.DepartmentName, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Designation Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Employee.DesignationName, Model.EmployeeReferenceInformation.Employee.DesignationName, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Occupation</label>
+                        @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Occupation, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Designation</label>
+                        @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Designation, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Organization</label>
+                        @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Organization, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Mobile</label>
+                        @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Mobile, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Email</label>
+                        @Html.TextBoxFor(model => model.EmployeeReferenceInformation.Email, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6"><br />
+                        <label>Is Active</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="EmployeeReferenceInformation_IsActive" />
+                            <label for="EmployeeReferenceInformation_IsActive"></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Employee Reference Information
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeReferenceInformation")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeReferenceInformation")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "EmployeeReferenceInformation")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "EmployeeReferenceInformation")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeReferenceInformation.js")

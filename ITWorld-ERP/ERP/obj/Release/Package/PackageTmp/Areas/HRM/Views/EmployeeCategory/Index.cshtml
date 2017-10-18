@@ -1,0 +1,68 @@
+﻿@using ERP.HRM.ViewModel
+
+@model EmployeeCategoryViewModel
+
+@{
+    ViewBag.Title = "Employee Category Setup";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Category Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Employee Category Name</label>
+                        @Html.HiddenFor(model => model.EmployeeCategory.Id)
+                        @Html.TextBoxFor(model => model.EmployeeCategory.Name, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Description</label>
+                        @Html.TextBoxFor(model => model.EmployeeCategory.Description, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.EmployeeCategory.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Employee Category
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeCategory")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeCategory")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "EmployeeCategory")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "EmployeeCategory")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeCategory.js")

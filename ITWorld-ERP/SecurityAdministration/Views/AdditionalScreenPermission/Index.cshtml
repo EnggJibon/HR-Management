@@ -1,0 +1,465 @@
+﻿@using SecurityAdministration.BLL.ViewModels
+@model AdditionalScreenPermissionVM
+
+@{
+    ViewBag.Title = "Role Wise Additional Screen Permission Setup";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Role Wise Additional Screen Permission Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>User</label>
+                        @Html.DropDownListFor(model => model.UserList, Model.UserList, "--Select--", new { @id = "ddlfUserList", @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Module</label>
+                        @Html.DropDownListFor(model => model.ModuleList, Model.ModuleList, "--Select--", new { @id = "ddlfModuleList", @class = "form-control input-sm" })
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Screen</label>
+                        @Html.DropDownList("ScreenList", Enumerable.Empty<SelectListItem>(), "--Select--", new { @id = "ddlfScreenList", @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Access Permission</label>
+                        <br />
+                        <input type="checkbox" id="chkCanRead" /><label style="padding-left: 5px;">Can Read</label>
+                        <input type="checkbox" id="chkCanCreate" /><label style="padding-left: 5px;">Can Add</label>
+                        <input type="checkbox" id="chkCanUpdate" /><label style="padding-left: 5px;">Can Modify</label>
+                        <input type="checkbox" id="chkCanDelete" /><label style="padding-left: 5px;">Can Delete</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Start Date</label>
+                        @Html.TextBoxFor(model => model.AdditionalScreenPermission.StartDate, new { @id = "txtStartDate", @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.AdditionalScreenPermission.StartDate)
+                    </div>
+                    <div class="col-md-6">
+                        <label>End Date</label>
+                        @Html.TextBoxFor(model => model.AdditionalScreenPermission.EndDate, new { @id = "txtEndDate", @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.AdditionalScreenPermission.EndDate)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-lg-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default btn-sm" />
+                        <input type="button" value="Reset" class="btn btn-default btn-sm" onclick="return clearScreenPermissionData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Additional Permissions
+    </div>
+    <div class="panel-grid">
+        <fieldset class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label>Role</label>
+                    @Html.DropDownListFor(model => model.UserList, Model.UserList, "--Select--", new { @id = "ddlfUserListFilter", @class = "form-control input-sm" })
+                </div>
+                <div class="col-md-4">
+                    <label>Module</label>
+                    @Html.DropDownListFor(model => model.ModuleList, Model.ModuleList, "--Select--", new { @id = "ddlfModuleListFilter", @class = "form-control input-sm" })
+                </div>
+                <div class="col-md-4">
+                    <label>Screen</label>
+                    @Html.DropDownList("ScreenList", Enumerable.Empty<SelectListItem>(), "--Select--", new { @id = "ddlfScreenListFilter", @class = "form-control input-sm" })
+                </div>
+            </div>
+        </fieldset>
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        setStatus(false);
+        $("#hdnIsInsert").val(true);
+
+        $('#ddlfModuleList').change(function () {
+            loadScreenDropdownList($(this).val(), 'ddlfScreenList');
+        });
+
+        $('#ddlfModuleListFilter').change(function () {
+            loadScreenDropdownList($(this).val(), 'ddlfScreenListFilter');
+        });
+        clearScreenPermissionData();
+        displayAdditionalScreenPermissionListInTable();
+    });
+
+    function loadScreenDropdownList(moduleID, dropdownScreenList) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetScreenList", "RoleWiseScreenPermission")',
+            data: { moduleID: moduleID },
+            cache: false,
+            dataType: 'json',
+            success: function (data) {
+                $('#' + dropdownScreenList).get(0).options.length = 0;
+                $('#' + dropdownScreenList).get(0).options[0] = new Option("--Select--", "");
+                $.map(data, function (item) {
+                    $('#' + dropdownScreenList).get(0).options[$('#' + dropdownScreenList).get(0).options.length] = new Option(item.Text, item.Value);
+                });
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+    }
+
+    $('#ddlfUserListFilter').change(function () {
+        var userID = $(this).val();
+        var moduleID = $('#ddlfModuleListFilter').val();
+        var screenCode = $('#ddlfScreenListFilter').val();
+        loadAdditionalScreenPermissionList(userID, moduleID, screenCode);
+    });
+
+    $('#ddlfModuleListFilter').change(function () {
+        var userID = $('#ddlfUserListFilter').val();
+        var moduleID = $(this).val();
+        var screenCode = $('#ddlfScreenListFilter').val();
+        loadAdditionalScreenPermissionList(userID, moduleID, screenCode);
+    });
+
+    $('#ddlfScreenListFilter').change(function () {
+        var userID = $('#ddlfUserListFilter').val();
+        var moduleID = $('#ddlfModuleListFilter').val();
+        var screenCode = $(this).val();
+        //displayAdditionalScreenPermissionListInTable(userID, moduleID, screenCode);
+        loadAdditionalScreenPermissionList(userID, moduleID, screenCode);
+    });
+
+    function loadAdditionalScreenPermissionList(userID, moduleID, screenCode) {
+        //if (userID == undefined) userID = null;
+        //if (moduleID == undefined) moduleID = "";
+        //if (screenCode == undefined) screenCode = "";
+
+        userID = userID || null;
+        moduleID = moduleID || "";
+        screenCode = screenCode || "";
+
+        var dataSourceUrl = '@Url.Action("AdditionalScreenPermissionList", "AdditionalScreenPermission", new { userID = " + userID + ", moduleID = " + moduleID + ", screenCode = " + screenCode + " })'
+        var dataSource = new kendo.data.DataSource({
+            type: "aspnetmvc-ajax",
+            transport: {
+                read: {
+                    url: dataSourceUrl,
+                    type: "POST"
+                }
+            },
+            schema: {
+                data: function (data) {
+                    return data.Data;
+                },
+                total: function (data) {
+                    return data.Total;
+                },
+                model: {
+                    fields: {
+                        UserID: { type: "string" },
+                        LastName: { type: "string" },
+                        ModuleID: { type: "string" },
+                        ModuleTitle: { type: "string" },
+                        ScreenCode: { type: "string" },
+                        ScreenTitle: { type: "string" },
+                        CanRead: { type: "string" },
+                        CanCreate: { type: "string" },
+                        CanUpdate: { type: "string" },
+                        CanDelete: { type: "string" },
+                    }
+                }
+            },
+            sort: [
+                { field: "UserID", dir: "asc" },
+                { field: "LastName", dir: "asc" },
+                { field: "ModuleID", dir: "asc" },
+                { field: "ModuleTitle", dir: "asc" },
+                { field: "ScreenCode", dir: "asc" },
+                { field: "ScreenTitle", dir: "asc" },
+                { field: "CanRead", dir: "asc" },
+                { field: "CanCreate", dir: "asc" },
+                { field: "CanUpdate", dir: "asc" },
+                { field: "CanDelete", dir: "asc" },
+            ],
+            pageSize: 10,
+            serverPaging: true,
+            serverFiltering: true,
+            serverSorting: true
+        });
+        $("#grid").kendoGrid({
+            selectable: "row",
+            dataSource: dataSource,
+            filterable: {
+                extra: true
+            },
+            serverPaging: true,
+            serverFiltering: true,
+            serverSorting: true,
+            height: 200,
+            groupable: false,
+            sortable: true,
+            pageable: {
+                refresh: true,
+                pageSizes: true,
+                buttonCount: 5
+            },
+            columns: [
+                {
+                    field: "UserID",
+                    title: "User ID",
+                },
+                {
+                    field: "LastName",
+                    title: "Last Name",
+                    filterable: true,
+                },
+                {
+                    field: "ModuleID",
+                    title: "Module ID",
+                    filterable: true,
+                },
+                {
+                    field: "ModuleTitle",
+                    title: "Module Title",
+                },
+                {
+                    field: "ScreenCode",
+                    title: "Screen Code",
+                    filterable: true,
+                },
+                {
+                    field: "ScreenTitle",
+                    title: "Screen Title",
+                    filterable: true,
+                },
+                {
+                    field: "CanRead",
+                    title: "Can Read",
+                    filterable: false,
+                    width: 110,
+                    template: function (dataItem) {
+                        return dataItem.CanRead == "Yes" ? "Active" : "Inactive";
+                    }
+                },
+                {
+                    field: "CanCreate",
+                    title: "Can Create",
+                    filterable: false,
+                    width: 110,
+                    template: function (dataItem) {
+                        return dataItem.CanCreate == "Yes" ? "Active" : "Inactive";
+                    }
+                },
+                {
+                    field: "CanUpdate",
+                    title: "Can Update",
+                    filterable: false,
+                    width: 110,
+                    template: function (dataItem) {
+                        return dataItem.CanUpdate == "Yes" ? "Active" : "Inactive";
+                    }
+                },
+                {
+                    field: "CanDelete",
+                    title: "Can Delete",
+                    filterable: false,
+                    width: 110,
+                    template: function (dataItem) {
+                        return dataItem.CanDelete == "Yes" ? "Active" : "Inactive";
+                    }
+                },
+                {
+                    width: 100,
+                    title: "Select",
+                    sortable: false,
+                    filterable: false,
+                    template: function (dataItem) {
+                        if (typeof dataItem.Id != "string") {
+                            return "<a class='btn-link' onclick='editData(" + dataItem.UserID + "," + dataItem.ScreenCode + ")'>Edit</a> | <a class='btn-link-delete' onclick='deleteData(" + dataItem.userID + "," + dataItem.ScreenCode + ")'>Delete</a>";
+                        }
+                    }
+                }
+            ]
+        });
+    }
+
+    function displayAdditionalScreenPermissionListInTable(userID, moduleID, screenCode) {
+        loadAdditionalScreenPermissionList(userID, moduleID, screenCode);
+    }
+
+    function validatedRoleWiseScreenPermission() {
+        if ($('#ddlfUserList').val() == "") {
+            showMessage('User selection is required.', 'warning', 'Warning!');
+            return false;
+        }
+        if ($('#ddlfModuleList').val() == "") {
+            showMessage('Module selection is required.', 'warning', 'Warning!');
+            return false;
+        }
+        if ($('#ddlfScreenList').val() == "") {
+            showMessage('Screen selection is required.', 'warning', 'Warning!');
+            return false;
+        }
+        if ($('#AdditionalScreenPermission_StartDate').val() == "") {
+            showMessage('Start date is required.', 'warning', 'Warning!');
+            return false;
+        }
+        if ($('#AdditionalScreenPermission_EndDate').val() == "") {
+            showMessage('End date is required.', 'warning', 'Warning!');
+            return false;
+        }
+        return true;
+    }
+
+    $("#btnSave").click(function () {
+        if (validatedRoleWiseScreenPermission()) {
+
+            var accessRight = $('#chkCanRead').is(":checked") ? '1' : '0';
+            accessRight += $('#chkCanCreate').is(":checked") ? '1' : '0';
+            accessRight += $('#chkCanUpdate').is(":checked") ? '1' : '0';
+            accessRight += $('#chkCanDelete').is(":checked") ? '1' : '0';
+
+            var jsonObject = {
+                "UserID": $('#ddlfUserList').val(),
+                "ScreenCode": $('#ddlfScreenList').val(),
+                "AccessRight": accessRight,
+                "StartDate": $('#AdditionalScreenPermission_StartDate').val(),
+                "EndDate": $('#AdditionalScreenPermission_EndDate').val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Save", "AdditionalScreenPermission")',
+                data: JSON.stringify({ additionalScreenPermission: jsonObject, isInsert: $("#hdnIsInsert").val() }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    if (data.JsonData != null) {
+                        displayAdditionalScreenPermissionListInTable(null, null, null);
+                        clearScreenPermissionData();
+                        showMessage('Saved successfully.', 'success', 'Success!');
+                    } else {
+                        showMessage(data.Message, 'warning', 'Warning!');
+                    }
+                },
+                error: function () {
+                    showMessage('Connection error.', 'error', 'Error!');
+                }
+            });
+        }
+    });
+
+    function clearScreenPermissionData() {
+        $('#ddlfUserList').val("");
+        $('#ddlfModuleList').val("");
+        $('#ddlfScreenList').val("");
+        $('#chkCanRead').prop('checked', false);
+        $('#chkCanCreate').prop('checked', false);
+        $('#chkCanUpdate').prop('checked', false);
+        $('#chkCanDelete').prop('checked', false);
+        $('#txtStartDate').val("");
+        $('#txtEndDate').val("");
+        $('#ddlfUserListFilter').val('');
+        $('#ddlfModuleListFilter').val('');
+        $('#ddlfScreenListFilter').val('');
+        setStatus(false);
+    }
+
+    function editData(userID, screenCode) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetAdditionalScreenPermission", "AdditionalScreenPermission")',
+            data: { userID: userID, screenCode: screenCode },
+            cache: false,
+            success: function (data) {
+                $('#ddlfUserList').val(data.userID);
+                $('#ddlfModuleList').val(data.ModuleID);
+                $('#chkCanRead').prop('checked', data.CanRead == 'Yes' ? true : false);
+                $('#chkCanCreate').prop('checked', data.CanCreate == 'Yes' ? true : false);
+                $('#chkCanUpdate').prop('checked', data.CanUpdate == 'Yes' ? true : false);
+                $('#chkCanDelete').prop('checked', data.CanDelete == 'Yes' ? true : false);
+                $('#StartDate').val(data.StartDate);
+                $('#EndDate').val(date.EndDate);
+                setStatus(true);
+
+                $('#ddlfUserList').get(0).options[0] = new Option(data.LastName, data.JsonData.UserID);
+                $('#ddlfScreenList').get(0).options[0] = new Option(data.ScreenTitle, data.JsonData.ScreenCode);
+            },
+            error: function (xhr, status, error) {
+                var err = eval("(" + xhr.responseText + ")");
+                alert(err.Message);
+            }
+        });
+    }
+
+    function deleteData(userID, screenCode) {
+        if (confirm("Are you sure you want to delete this Role?")) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Delete", "RoleWiseScreenPermission")',
+                data: { userID: userID, screenCode: screenCode },
+                cache: false,
+                success: function () {
+                    clearScreenPermissionData();
+                    displayAdditionalScreenPermissionListInTable();
+                    showMessage('Deleted successfully.', 'success', 'Success!');
+                },
+                error: function () {
+                    showMessage('Connection error.', 'error', 'Error!');
+                }
+            });
+        }
+    }
+
+    function setStatus(isDisabled) {
+        $("#ddlfUserList").prop("disabled", isDisabled);
+        $("#ddlfModuleList").prop("disabled", isDisabled);
+        $("#ddlfScreenList").prop("disabled", isDisabled);
+        $("#hdnIsInsert").val(!isDisabled);
+    }
+
+    function showMessage(message, priority, title) {
+        $('#message').html("");
+        $(document).trigger("add-alerts", [
+            {
+                'message': message,
+                'priority': priority,
+                'title': title
+            }
+        ]);
+    }
+</script>
+<script src="~/Scripts/jquery.bsAlerts.js"></script>

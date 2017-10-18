@@ -1,0 +1,270 @@
+﻿@using SecurityAdministration.BLL.ViewModels
+@model RoleVM
+
+@{
+    ViewBag.Title = "Role Management";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Role Setup
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Role Name</label>
+                        @Html.HiddenFor(model => model.Role.RoleID)
+                        @Html.TextBoxFor(model => model.Role.RoleName, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Description</label>
+                        @Html.TextBoxFor(model => model.Role.Description, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="label-checkbox">Is Active</label>
+                        @Html.CheckBoxFor(model => model.Role.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default btn-sm" onclick="return clearRoleData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Roles
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#hdnIsInsert").val(true);
+        displayRoleList();
+    });
+
+    function displayRoleList() {
+        var dataSourceUrl = "/Role/RoleList";
+        var dataSource = new kendo.data.DataSource({
+            type: "aspnetmvc-ajax",
+            transport: {
+                read: {
+                    url: dataSourceUrl,
+                    type: "POST"
+                }
+            },
+            schema: {
+                data: function (data) {
+                    return data.Data;
+                },
+                total: function (data) {
+                    return data.Total;
+                },
+                model: {
+                    fields: {
+                        RoleID: { type: "string" },
+                        RoleName: { type: "string" },
+                        Description: { type: "string" },
+                    }
+                }
+            },
+            sort: [
+                { field: "RoleID", dir: "asc" },
+                { field: "RoleName", dir: "asc" },
+            { field: "Description", dir: "asc" },
+            ],
+            pageSize: 10,
+            serverPaging: true,
+            serverFiltering: true,
+            serverSorting: true
+        });
+        $("#grid").kendoGrid({
+            selectable: "row",
+            dataSource: dataSource,
+            filterable: {
+                extra: true
+            },
+            serverPaging: true,
+            serverFiltering: true,
+            serverSorting: true,
+            height: 200,
+            groupable: false,
+            sortable: true,
+            pageable: {
+                refresh: true,
+                pageSizes: true,
+                buttonCount: 5
+            },
+            columns: [
+            {
+                field: "RoleID",
+                title: "Role ID",
+                width: "150px",
+            },
+            {
+                field: "RoleName",
+                title: "Name",
+                filterable: true,
+            },
+            {
+                field: "Description",
+                title: "Description",
+                filterable: true,
+            },
+            {
+                field: "IsActive",
+                title: "Status",
+                filterable: false,
+                template:
+                    function (dataItem) {
+                        return dataItem.IsActive ? "Active" : "Inactive";
+                    }
+            },
+            {
+                width: 150,
+                field: "RoleID",
+                title: "Select",
+                sortable: false,
+                filterable: false,
+                template:
+                    function (dataItem) {
+                        if (typeof dataItem.Id != "string") {
+                            return "<a class='btn-link' onclick='editRoleData(" + dataItem.RoleID + ")'>Edit</a> | <a class='btn-link-delete' onclick='deleteItem(" + dataItem.RoleID + ")'>Delete</a>";
+                        }
+                    }
+            }]
+        });
+    }
+
+    function validatedRole() {
+        if ($('#Role_RoleName').val() == "") {
+            showMessage('Role Name is required.', 'warning', 'Warning!');
+            return false;
+        }
+        else if ($('#Role_Description').val() == "") {
+            showMessage('Description is required.', 'warning', 'Warning!');
+            return false;
+        }
+        return true;
+    }
+
+    function clearRoleData() {
+        $('#Role_RoleID').val("");
+        $('#Role_RoleName').val("");
+        $('#Role_Description').val("");
+        $('#Role_IsActive').prop('checked', false);
+        $("#hdnIsInsert").val(true);
+    }
+
+    $("#btnSave").click(function () {
+        if (validatedRole()) {
+            var jsonObject = {
+                "RoleID": $('#Role_RoleID').val(),
+                "RoleName": $('#Role_RoleName').val(),
+                "Description": $('#Role_Description').val(),
+                "IsActive": $('#Role_IsActive').is(":checked")
+            };
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Save", "Role")',
+                data: JSON.stringify({ roleView: jsonObject, isInsert: $("#hdnIsInsert").val() }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    if (data == 1) {
+                        showMessage('Role ID already exists.', 'warning', 'Warning!');
+                    } else {
+                        displayRoleList();
+                        clearRoleData();
+                        showMessage('Saved successfully.', 'success', 'Success!');
+                    }
+                },
+                error: function () {
+                    showMessage('Connection error.', 'error', 'Error!');
+                }
+            });
+        }
+    });
+
+    function editRoleData(id) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetRole", "Role")',
+            data: { id: id },
+            cache: false,
+            success: function (data) {
+                $('#Role_RoleID').val(data.RoleID);
+                $('#Role_RoleName').val(data.RoleName);
+                $('#Role_Description').val(data.Description);
+                $('#Role_IsActive').prop('checked', data.IsActive);
+                $("#hdnIsInsert").val(false);
+            },
+            error: function () {
+                showMessage('Connection error.', 'error', 'Error!');
+            }
+        });
+    }
+
+    function deleteItem(id) {
+        if (confirm("Are you sure you want to delete this role?")) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Delete", "Role")',
+                data: { id: id },
+                cache: false,
+                success: function () {
+                    clearRoleData();
+                    displayRoleList();
+                    $("#myModal").modal('hide');
+                    showMessage('Deleted successfully.', 'success', 'Success!');
+                },
+                error: function () {
+                    $("#myModal").modal('hide');
+                    showMessage('Connection error.', 'error', 'Error!');
+                }
+            });
+        }
+    }
+
+    function showMessage(message, priority, title) {
+        $('#message').html("");
+        $(document).trigger("add-alerts", [
+          {
+              'message': message,
+              'priority': priority,
+              'title': title
+          }
+        ]);
+    }
+</script>
+<script src="~/Scripts/jquery.bsAlerts.js"></script>

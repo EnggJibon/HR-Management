@@ -1,0 +1,88 @@
+﻿@using ERP.Security.ViewModel
+
+@model ScreenViewModel
+
+@{
+    ViewBag.Title = "Screen Setup ";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Screen Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Screen Code</label>
+                        @Html.HiddenFor(model => model.Screen.Id)
+                        @Html.TextBoxFor(model => model.Screen.ScreenCode, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Module Name</label>
+                        @Html.DropDownListFor(model => model.ModuleList, Model.ModuleList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Title</label>
+                        @Html.TextBoxFor(model => model.Screen.Title, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Type</label>
+                        @*@Html.TextBoxFor(model => model.Screen.Type, new { @class = "form-control input-sm" })*@
+                        @Html.DropDownListFor(model => model.ScreenTypeList, Model.ScreenTypeList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>URL</label>
+                        @Html.TextBoxFor(model => model.Screen.URL, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.Screen.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Screen
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "Screen")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "Screen")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "Screen")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "Screen")"></div>
+@Scripts.Render("~/Scripts/Security/Screen.js")
+
+
+

@@ -1,0 +1,130 @@
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.Net4.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe.config
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csprojResolveAssemblyReference.cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Dashboard.resources
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.LoginForm.resources
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Properties.Resources.resources
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchIn.resources
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchOut.resources
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csproj.GenerateResource.Cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.exe
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.Net4.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe.config
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csprojResolveAssemblyReference.cache
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Dashboard.resources
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.LoginForm.resources
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Properties.Resources.resources
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchIn.resources
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchOut.resources
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csproj.GenerateResource.Cache
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.exe
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe.config
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.exe
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AttendanceTracker.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.BLL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Common.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.DAL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.HRM.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Security.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\ERP.Utilities.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\EntityFramework.SqlServer.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Mvc.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csprojResolveAssemblyReference.cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Dashboard.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.LoginForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.Properties.Resources.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchIn.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.PunchOut.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.csproj.GenerateResource.Cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.exe
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\AttendanceTracker\obj\Debug\AttendanceTracker.pdb

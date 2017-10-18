@@ -1,0 +1,62 @@
+﻿<a id="signInLink" href="#" data-toggle="">Sign In <strong class="caret"></strong></a>
+<div id="loginPanel" class="dropdown-menu" style="z-index: 999; padding: 10px; -moz-min-width: 240px; -ms-min-width: 240px; -o-min-width: 240px; -webkit-min-width: 240px; min-width: 240px;">
+    <form action="" method="post" role="form" class="form-horizontal">
+        <input class="form-control" id="user" placeholder="Username" type="text" style="margin-bottom:.5em">
+        <input class="form-control" id="pass" placeholder="Password" type="password" style="margin-bottom:.7em">
+        <label><input type="checkbox" />&nbsp;&nbsp;Remember me</label>
+        <input id="btnSignIn" class="btn btn-primary" style="margin-top:.75em;width: 100%; height: 32px; font-size: 13px;" type="button" name="commit" value="Sign In">
+        @*<div class="field-validation-error">
+            <label id="Message" style="color: red;"></label>
+        </div>*@
+        <br/><br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnSignIn').click(function () {
+            var loginUser = $('#user').val();
+            var loginPass = $('#pass').val();
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Login", "General", new { area = string.Empty })',
+                data: { username: loginUser, password: loginPass },
+                cache: false,
+                success: function (data) {
+                    if (data.val == 1) {
+                        window.location = data.url;
+                    }
+                    else if (data.val == 2) {
+                        window.location = data.url;
+                    }
+                    else if (data.val == 3) {
+                        window.location = data.url;
+                    } else {
+                        showMessage(data.result, 'error', 'Error!');
+                        $('#loginPanel').show();
+                    }
+                },
+                error: function (data) {
+                    console.log(data);
+                    $('#Message').html(data.Message);
+                    return false;
+                }
+            });
+        });
+
+        $('#signInLink').click(function () {
+            $('#loginPanel').toggle();
+        });
+        $('#btnSignIn').click(function () {
+            $('#loginPanel').hide();
+            $('#signInLink').before();
+        });
+    });
+</script>
+<script src="~/Scripts/Library/jquery.bsAlerts.js"></script>

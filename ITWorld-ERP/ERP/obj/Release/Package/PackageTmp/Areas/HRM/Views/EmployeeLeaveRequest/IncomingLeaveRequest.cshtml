@@ -1,0 +1,117 @@
+﻿@using ERP.HRM.ViewModel
+
+@model EmployeeLeaveRequestViewModel
+
+@{
+    ViewBag.Title = "Incoming Leave Requests";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Incoming Leave Requests
+        </div>
+        <div class="panel-grid">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <div id="requestDetail" class="panel panel-default">
+        <div class="panel-heading">
+            Leave Balance and Leave Request Details
+        </div>
+        <div class="panel-grid">
+            <h5 style="background-color: #edd0ed; text-shadow: 0 1px white; color: #7b267b; margin-top: -5px; padding: 5px 10px;">Leave Balance</h5>
+            <div id="leaveBalance"></div>
+        </div>
+        @Html.HiddenFor(model => model.EmployeeLeaveRequest.Id)
+        @Html.HiddenFor(model => model.EmployeeLeaveRequest.EmployeeId)
+        <div class="panel-body">
+            <h5 style="background-color: #edd0ed; text-shadow: 0 1px white; color: #7b267b; margin-top: -10px; padding: 5px 10px;">Leave Request Details</h5>
+            <fieldset class="form-horizontal divHighlight" id="incoming-leave-request">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Request Date</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.RequestDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-4">
+                        <label>Leave Type</label>
+                        @Html.DropDownListFor(model => model.EmployeeLeaveRequest.LeaveTypeId, Model.LeaveTypeList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-2">
+                        <label>Half Day</label>
+                        <br />
+                        @Html.CheckBoxFor(model => model.EmployeeLeaveRequest.IsHalfDay)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Leave From</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.LeaveFrom, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Leave To</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.LeaveTo, new { style = "width: 100%;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Purpose</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Purpose, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Days Count</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.DaysCount, new { @class = "form-control input-sm", disabled = "disabled" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <label>Is Adjustment</label>
+                        <br />
+                        @Html.CheckBoxFor(model => model.EmployeeLeaveRequest.IsAdjustment)
+                    </div>
+                    <div class="col-md-4">
+                        <label>Adjustment Date</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.AdjustmentDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Approval Status</label>
+                        @Html.DropDownListFor(model => model.EmployeeLeaveRequest.ApprovalStatusId, Model.LeaveApprovalStatusList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    @*<div class="col-md-6">
+                            <label>Approval Date</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.ApprovalDate, new { style = "width: 100%;" })
+                        </div>*@
+                </div>
+                @*<div class="form-group">
+                        <div class="col-md-6">
+                            <label class="label-checkbox">Is Active</label>
+                            <br/>
+                            @Html.CheckBoxFor(model => model.EmployeeLeaveRequest.IsActive)
+                        </div>
+                    </div>*@
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div id="request-list-url" data-request-url="@Url.Action("IncomingRequestList", "EmployeeLeaveRequest")"></div>
+<div id="list-leave-balance-url" data-request-url="@Url.Action("LeaveBalance", "EmployeeLeaveInformation")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeLeaveRequest")"></div>
+<div id="approve-url" data-request-url="@Url.Action("Approve", "EmployeeLeaveRequest")"></div>
+
+@Scripts.Render("~/Scripts/HRM/IncommingLeaveRequest.js")

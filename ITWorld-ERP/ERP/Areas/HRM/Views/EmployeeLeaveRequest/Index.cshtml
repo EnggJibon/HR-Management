@@ -1,0 +1,187 @@
+﻿@using ERP.HRM.ViewModel
+
+@model EmployeeLeaveRequestViewModel
+
+@{
+    ViewBag.Title = "Employee Leave Request Information";
+}
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+    }
+    @Html.Hidden("tokenHeader", TokenHeaderValue())
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Information
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="divHighlight col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-6" style="display:none;">
+                            <label>Employee Id</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.EmployeeId, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-4">
+                            <label>Employee Code</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-2">
+                            <br />
+                            <input id="btnShowDetails" type="button" value="Show Details" class="btn btn-default" />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Employee.EmployeeName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Department Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Employee.DepartmentName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Designation Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Employee.DesignationName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            All Leave Requests
+            <div class="pull-right">
+                <small style="font-size: 12px; padding-right: 10px;">
+                    <a href="#" onclick="showEmployeeLeaveDetailsForNewEntry()">Click to request new leave</a>
+                </small>
+            </div>
+        </div>
+        <div class="panel-grid">
+            <div id="grid"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="employeeLeaveDetails">
+        <div class="panel-heading">
+            Employee Leave Request Information
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.EmployeeLeaveRequest.Id)
+            <div class="pull-right">
+                <small style="font-size: 12px; padding-right: 10px;">
+                    <a href="#" onclick="hideEmployeeLeaveDetails()">Click to hide leave details</a>
+                </small>
+            </div>
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Request Date</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.RequestDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-4">
+                        <label>Leave Type</label>
+                        @Html.DropDownListFor(model => model.EmployeeLeaveRequest.LeaveTypeId, Model.LeaveTypeList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-2">
+                        <label>Half Day</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="EmployeeLeaveRequest_IsHalfDay" />
+                            <label for="EmployeeLeaveRequest_IsHalfDay"></label>
+                        </div>
+                        @*@Html.RadioButtonFor(model => model.EmployeeLeaveRequest.IsHalfDay, new { @Checked = Model.EmployeeLeaveRequest.IsHalfDay }) Yes
+                            @Html.RadioButtonFor(model => model.EmployeeLeaveRequest.IsHalfDay, new { @Checked = !Model.EmployeeLeaveRequest.IsHalfDay }) No*@
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Leave From</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.LeaveFrom, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Leave To</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.LeaveTo, new { style = "width: 100%;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Purpose</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.Purpose, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Days Count</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.DaysCount, new { @class = "form-control input-sm", disabled = "disabled" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <label>Is Adjustment</label>
+                        <div class="squaredFour">
+                            <input type="checkbox" id="EmployeeLeaveRequest_IsAdjustment" />
+                            <label for="EmployeeLeaveRequest_IsAdjustment"></label>
+                        </div>
+                        @*@Html.RadioButtonFor(model => model.EmployeeLeaveRequest.IsAdjustment, true) Yes
+                            @Html.RadioButtonFor(model => model.EmployeeLeaveRequest.IsAdjustment, false) No*@
+                    </div>
+                    <div class="col-md-4">
+                        <label>Adjustment Date</label>
+                        @Html.TextBoxFor(model => model.EmployeeLeaveRequest.AdjustmentDate, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Approval Status</label>
+                        @Html.DropDownListFor(model => model.EmployeeLeaveRequest.ApprovalStatusId, Model.LeaveApprovalStatusList, "--Select--", new { @class = "form-control input-sm", disabled = "disabled" })
+                    </div>
+                    @*<div class="col-md-6">
+                            <label>Approval Date</label>
+                            @Html.TextBoxFor(model => model.EmployeeLeaveRequest.ApprovalDate, new { style = "width: 100%;" })
+                        </div>*@
+                </div>
+                @*<div class="form-group">
+                        <div class="col-md-6">
+                            <label class="label-checkbox">Is Active</label>
+                            <br/>
+                            @Html.CheckBoxFor(model => model.EmployeeLeaveRequest.IsActive)
+                        </div>
+                    </div>*@
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input id="btnReset" type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeLeaveRequest")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeLeaveRequest")"></div>
+<div id="get-by-employeeId-url" data-request-url="@Url.Action("GetByEmployeeId", "EmployeeLeaveRequest")"></div>
+<div id="get-by-employeeCode-url" data-request-url="@Url.Action("GetByEmployeeCode", "EmployeeLeaveRequest")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "EmployeeLeaveRequest")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "EmployeeLeaveRequest")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeLeaveRequest.js")
+@*@Html.RazorJSInclude("~/Scripts/HRM/EmployeeLeaveRequest.js")*@

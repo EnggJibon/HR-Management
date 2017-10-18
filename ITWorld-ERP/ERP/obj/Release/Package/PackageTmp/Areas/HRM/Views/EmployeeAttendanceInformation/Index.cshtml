@@ -1,0 +1,109 @@
+﻿@using ERP.HRM.ViewModel
+@model EmployeeAttendanceInformationViewModel
+@{
+    ViewBag.Title = "Employee Attendance Information";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Search Employee Attendence Details
+            @Html.ValidationSummary(true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label>Employee Code</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.EmployeeCode, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-4">
+                        <label>Month</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Month, new { @class = "form-control input-sm"})
+                    </div>
+                    <div class="col-md-4">
+                        <label>Year</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Year, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label>Date</label>
+                        <br />
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Date, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-4"><br />
+                        <input id ="chkDate" type="checkbox" />
+                        <label>Date wise Employee Details</label>
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSearch" type="button" value="Search" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+<div id="result" class="panel panel-default">
+    <div class="panel-heading">
+        Employee Attendance Information
+    </div>
+    <div class="panel-body">
+        <fieldset class="form-horizontal" disabled="disabled">
+            <div class="divHighlight col-md-12">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Employee Code</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Employee Name</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Employee.EmployeeName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Department Name</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Employee.DepartmentName, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Designation Name</label>
+                        @Html.TextBoxFor(model => model.EmployeeAttendanceInformation.Employee.DesignationName, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeAttendanceInformation")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeAttendanceInformation")"></div>
+<div id="get-by-employeeCode-url" data-request-url="@Url.Action("GetByEmployeeCode", "EmployeeAttendanceInformation")"></div>
+<div id="get-by-Date-url" data-request-url="@Url.Action("GetByEmployeeCodeAndDate", "EmployeeAttendanceInformation")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeAttendanceInformation.js")
+
+
+
+
+

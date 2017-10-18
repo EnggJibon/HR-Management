@@ -1,0 +1,163 @@
+﻿@*EmployeeNomineeInformation*@
+
+@using ERP.HRM.ViewModel
+@model EmployeeNomineeInformationViewModel
+
+
+@{
+    ViewBag.Title = "Employee Nominee Information";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+             Employee Nominee Information
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.EmployeeNomineeInformation.Id)
+        </div>
+        <div class="panel-body">
+            
+            <fieldset class="form-horizontal" disabled="disabled">
+                <div class="divHighlight col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-6" style="display:none;">
+                            <label>Employee Id</label>
+                            @Html.TextBoxFor(model => model.EmployeeNomineeInformation.EmployeeId, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Code</label>
+                            @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Employee.EmployeeCode, Model.EmployeeNomineeInformation.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Employee Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Employee.EmployeeName, Model.EmployeeNomineeInformation.Employee.EmployeeName, new { @class = "form-control input-sm", @disabled = "disabled" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>Department Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Employee.DepartmentName, Model.EmployeeNomineeInformation.Employee.DepartmentName, new { @class = "form-control input-sm" })
+                        </div>
+                        <div class="col-md-6">
+                            <label>Designation Name</label>
+                            @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Employee.DesignationName, Model.EmployeeNomineeInformation.Employee.DesignationName, new { @class = "form-control input-sm" })
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            
+
+            <fieldset class="form-horizontal">
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Name</label>
+
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Name, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Relation</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Relation, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Occupation</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Occupation, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Organization</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Organization, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>NationalId</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.NationalId, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Phone</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Phone, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Mobile</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Mobile, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Email</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Email, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                
+               
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Passport</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Passport, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Address</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.AddressId, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>BenefitName</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.BenefitName, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Percentage</label>
+                        @Html.TextBoxFor(model => model.EmployeeNomineeInformation.Percentage, new { @class = "form-control input-sm"})
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label class="label-checkbox">Is Active</label>
+                        @Html.CheckBoxFor(model => model.EmployeeNomineeInformation.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+<div id="myModal" class="modal fade">
+    @Html.Partial("_ConfirmationView")
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Employee Nominee Information
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+
+
+<div id="list-url" data-request-url="@Url.Action("List", "EmployeeNomineeInformation")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "EmployeeNomineeInformation")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "EmployeeNomineeInformation")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "EmployeeNomineeInformation")"></div>
+
+@Scripts.Render("~/Scripts/HRM/EmployeeNomineeInformation.js")

@@ -1,0 +1,81 @@
+﻿<a id="signInLink" href="#" data-toggle="">Sign In <strong class="caret"></strong></a>
+
+<div class="navbar-collapse collapse pull-right" id="loginHeader" style="position: fixed; margin-top: 13px; margin-left: 125px;">
+    <div id="loginPanel" class="dropdown-menu" style="padding: 10px; -moz-min-width: 240px; -ms-min-width: 240px; -o-min-width: 240px; -webkit-min-width: 240px; min-width: 240px;">
+        <form action="" method="post" role="form" class="form-horizontal">
+            <input class="form-control" id="inputEmail" placeholder="Email" type="text" style="margin-bottom:.5em">
+            <input class="form-control" id="inputPassword" placeholder="Password" type="password" style="margin-bottom:.7em">
+            <label><input type="checkbox" />&nbsp;&nbsp;Remember me</label>
+            <input id="btnSignIn" class="btn btn-primary" style="margin-top:.75em;width: 100%; height: 32px; font-size: 13px;" type="button" name="commit" value="Sign In">
+            <div class="field-validation-error">
+                <label id="Message" style="color: red;"></label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnSignIn').click(function () {
+            var loginId = $('#inputEmail').val();
+            var loginPassword = $('#inputPassword').val();
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Login", "General")',
+                data: { loginID: loginId, password: loginPassword },
+                cache: false,
+                success: function (data) {
+                    if (data.val == 1) {
+                        $('#Message').html(data.result);
+                        window.location = data.url;
+                    }
+                    else if (data.val == 2) {
+                        $('#Message').html(data.result);
+                        window.location = data.url;
+                    }
+                    else if (data.val == 3) {
+                        $('#Message').html(data.result);
+                        window.location = data.url;
+                    }
+
+                    //location.reload();
+                    //$('#headerBeforeLogin').hide();
+
+                    @*if (data.Check == 3) {
+                        @Url.Action("ChangePassword","Home")
+
+                    }*@
+                    return false;
+                },
+                error: function (data) {
+                    console.log(data);
+                    $('#Message').html(data.Message);
+                    return false;
+                }
+            });
+        });
+
+        $('#signInLink').click(function () {
+            $('#loginPanel').toggle();
+        });
+        $('#btnSignIn').click(function () {
+            $('#loginPanel').hide();
+            $('#signInLink').before();
+        });
+
+        //$('#signInLink').focusout(function () {
+        //    $('#loginPanel').focusout(function() {
+        //        $('#inputEmail').focusout(function () {
+        //            $('#loginPanel').hide();
+        //        });
+        //    });
+        //});
+
+        function loginCheck(loginId, loginPassword) {
+
+        }
+
+    });
+</script>
+<script src="~/Scripts/jquery.bsAlerts.js"></script>

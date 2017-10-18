@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.DAL</RootNamespace>
+    <AssemblyName>ERP.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Country.cs">
+      <DependentUpon>ERP_Common.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ERP_Common.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Common.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ERP_Common.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Common.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ERP_Common.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Common.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Repository\CountryRepository.cs" />
+    <Compile Include="HRM\Address.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\AnnualHoliday.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\AnnualHolidayCategory.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Department.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Designation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Employee.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeAttendanceInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeCategory.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeEducationalQualification.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeEmploymentHistory.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeFamilyMember.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeHealthInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeLeaveInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeLeaveRequest.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeNomineeInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\EmployeeReferenceInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\ERP_HRM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_HRM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\ERP_HRM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\ERP_HRM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_HRM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\LeaveApprovalStatu.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\LeavePolicy.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\LeaveRequestType.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\LeaveType.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\PersonalInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Repository\AddressRepository.cs" />
+    <Compile Include="HRM\Repository\AnnualHolidayCategoryRepository.cs" />
+    <Compile Include="HRM\Repository\AnnualHolidayRepository.cs" />
+    <Compile Include="HRM\Repository\DepartmentRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeAttendanceInformationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeCategoryRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeEducationalQualificationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeEmploymentHistoryRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeFamilyMemberRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeHealthInformationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeLeaveInformationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeNomineeInformationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeReferenceInformationRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeRepository.cs" />
+    <Compile Include="HRM\Repository\LeaveApprovalStatusRepository.cs" />
+    <Compile Include="HRM\Repository\LeavePolicyRepository.cs" />
+    <Compile Include="HRM\Repository\EmployeeLeaveRequestRepository.cs" />
+    <Compile Include="HRM\Repository\LeaveRequestTypeRepository.cs" />
+    <Compile Include="HRM\Repository\LeaveTypeRepository.cs" />
+    <Compile Include="HRM\Repository\PersonalInformationRepository.cs" />
+    <Compile Include="HRM\Repository\RosterInformationRepository.cs" />
+    <Compile Include="HRM\Repository\WeekendCategoryRepository.cs" />
+    <Compile Include="HRM\Repository\WeekendRepository.cs" />
+    <Compile Include="HRM\RosterInformation.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\USP_GetEmployeeAttendanceInformationList_Result.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\USP_GetEmployeeDetails_Result.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\USP_GetEmployeeLeaveBalanceInformation_Result.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\USP_GetEmployees_Result.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Weekend.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\WeekendCategory.cs">
+      <DependentUpon>ERP_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HRM\Repository\DesignationRepository.cs" />
+    <Compile Include="Security\AccessLog.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AdditionalOperationPermission.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AdditionalScreenPermission.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Application.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ApplicationPolicy.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ERP_Security.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Security.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ERP_Security.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ERP_Security.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERP_Security.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Menu.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Module.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Repository\AccessLogRepository.cs" />
+    <Compile Include="Security\Repository\AdditionalOperationPermissionRepository.cs" />
+    <Compile Include="Security\Repository\AdditionalScreenPermissionRepository.cs" />
+    <Compile Include="Security\Repository\ApplicationPolicyRepository.cs" />
+    <Compile Include="Security\Repository\ApplicationRepository.cs" />
+    <Compile Include="Security\Repository\MenuRepository.cs" />
+    <Compile Include="Security\Repository\RoleWiseOperationPermissionRepository.cs" />
+    <Compile Include="Security\Repository\RoleWiseScreenPermissionRepository.cs" />
+    <Compile Include="Security\Repository\ScreenOperationRepository.cs" />
+    <Compile Include="Security\Repository\ScreenRepository.cs" />
+    <Compile Include="Security\Repository\UserTypeRepository.cs" />
+    <Compile Include="Security\Repository\ModuleRepository.cs" />
+    <Compile Include="Security\Repository\RoleRepository.cs" />
+    <Compile Include="Security\Repository\UserInformationRepository.cs" />
+    <Compile Include="Security\Role.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleAudit.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleWiseOperationPermission.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleWiseScreenPermission.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Screen.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ScreenOperation.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInformation.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInRole.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserType.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAdditionalOperationPermissionList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAdditionalScreenPermissionList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetRoleWiseOperationPermissionList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetRoleWiseScreenPermissionList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetScreenList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetScreenOperationList_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetUserDetails_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetUsers_Result.cs">
+      <DependentUpon>ERP_Security.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Common\ERP_Common.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ERP_Common.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Common\ERP_Common.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_Common.edmx</DependentUpon>
+      <LastGenOutput>ERP_Common.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Common\ERP_Common.edmx.diagram">
+      <DependentUpon>ERP_Common.edmx</DependentUpon>
+    </None>
+    <None Include="Common\ERP_Common.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_Common.edmx</DependentUpon>
+      <LastGenOutput>ERP_Common.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="HRM\ERP_HRM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ERP_HRM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HRM\ERP_HRM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_HRM.edmx</DependentUpon>
+      <LastGenOutput>ERP_HRM.Context.cs</LastGenOutput>
+    </None>
+    <None Include="HRM\ERP_HRM.edmx.diagram">
+      <DependentUpon>ERP_HRM.edmx</DependentUpon>
+    </None>
+    <None Include="HRM\ERP_HRM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_HRM.edmx</DependentUpon>
+      <LastGenOutput>ERP_HRM.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="Security\ERP_Security.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ERP_Security.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Security\ERP_Security.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_Security.edmx</DependentUpon>
+      <LastGenOutput>ERP_Security.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Security\ERP_Security.edmx.diagram">
+      <DependentUpon>ERP_Security.edmx</DependentUpon>
+    </None>
+    <None Include="Security\ERP_Security.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERP_Security.edmx</DependentUpon>
+      <LastGenOutput>ERP_Security.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Utilities\ERP.Utilities.csproj">
+      <Project>{96668ac2-4d94-4e44-9eae-a56d51112c3c}</Project>
+      <Name>ERP.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

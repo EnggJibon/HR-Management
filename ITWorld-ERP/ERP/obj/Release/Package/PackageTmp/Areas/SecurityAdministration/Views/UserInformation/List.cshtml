@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "User List";
+}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Users
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("GetList", "UserInformation")"></div>
+<div id="details-info-url" data-request-url="@Url.Action("Index", "UserInformation")"></div>
+
+@Scripts.Render("~/Scripts/Security/UserList.js")

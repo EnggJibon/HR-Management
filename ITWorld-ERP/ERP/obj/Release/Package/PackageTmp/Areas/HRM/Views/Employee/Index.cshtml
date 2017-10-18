@@ -1,0 +1,313 @@
+﻿@using ERP.Common.Domain
+@using ERP.HRM.ViewModel
+@model EmployeeViewModel
+@{
+    ViewBag.Title = "Employee Information Setup";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Employee Information Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.Hidden("hdnIsInsertPersonalInfo", true)
+        </div>
+        <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#sectionA">Employment Details</a></li>
+                <li><a data-toggle="tab" href="#sectionB">Employee Personal Information</a></li>
+            </ul>
+            <div class="tab-content">
+                <br />
+                <div id="sectionA" class="tab-pane fade in active">
+                    <fieldset class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Employee Code</label>
+                                @Html.HiddenFor(model => model.Employee.Id)
+                                @Html.TextBoxFor(model => model.Employee.EmployeeCode, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Category</label>
+                                @Html.DropDownListFor(model => model.EmployeeCategoryList, Model.EmployeeCategoryList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Department</label>
+                                @Html.DropDownListFor(model => model.DepartmentList, Model.DepartmentList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Designation</label>
+                                @Html.DropDownListFor(model => model.DesignationList, Model.DesignationList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Mobile</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.Mobile, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                @Html.TextBoxFor(model => model.Employee.Email, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Job Location</label>
+                                @Html.TextBoxFor(model => model.Employee.JobLocation, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Work Location</label>
+                                @Html.TextBoxFor(model => model.Employee.WorkLocation, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Salary Location</label>
+                                @Html.TextBoxFor(model => model.Employee.SalaryLocation, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Appointment Letter No</label>
+                                @Html.TextBoxFor(model => model.Employee.AppointmentLetterNo, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Appointment Letter Issue Date</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.AppointmentLetterIssueDate, new { style = "width: 100%;" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Appointment Letter Join Date</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.AppointmentLetterJoinDate, new { style = "width: 100%;" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Joining Letter No</label>
+                                @Html.TextBoxFor(model => model.Employee.JoiningLetterNo, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Joining Date</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.JoiningDate, new { style = "width: 100%;" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Probationary Period in Days</label>
+                                @Html.TextBoxFor(model => model.Employee.ProbationaryPeriodInDays, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Job Confirmation Date</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.JobConfirmationDate, new { style = "width: 100%;" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Supervisor</label>
+                                @Html.DropDownListFor(model => model.Employee.SupervisorId, Model.SupervisorList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Approver</label>
+                                @Html.DropDownListFor(model => model.Employee.ApproverId, Model.ApproverList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Roster</label>
+                                @Html.DropDownListFor(model => model.Employee.RosterId, Model.RosterList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label> Is Active</label>
+                                <br />
+                                @Html.CheckBoxFor(model => model.Employee.IsActive)
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                                <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="sectionB" class="tab-pane fade">
+                    <fieldset class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Employee Code</label>
+                                @Html.HiddenFor(model => model.Employee.PersonalInformation.Id)
+                                @Html.TextBoxFor(model => model.Employee.EmployeeCode, new { @id = "Employee_PersonalInformation_EmployeeCode", @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Title</label>
+                                @Html.DropDownListFor(model => model.Employee.PersonalInformation.Title, Model.TitleList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>First Name</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.FirstName, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Middle Name</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.MiddleName, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last Name</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.LastName, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Birth Date</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.BirthDate, new { style = "width: 100%;" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Religion</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Religion, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Gender</label>
+                                @Html.DropDownListFor(model => model.Employee.PersonalInformation.Gender, Model.GenderList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Marital Status</label>
+                                @Html.DropDownListFor(model => model.Employee.PersonalInformation.MaritalStatus, Model.MaritalStatusList, "--Select--", new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Nationality</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Nationality, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>National Id</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.NationalId, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Phone</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Phone, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Mobile</label>
+                                <br />
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Mobile, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Email, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Mother Language</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.MotherLanguage, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Passport</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Passport, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Photo</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Photo, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Present Address</label>
+                                @Html.HiddenFor(model => model.Employee.PersonalInformation.Address.Id)
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Address.Address1, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Permanent Address</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Address.Address2, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>Country</label>
+                                <br />
+                                @{ var countryList = Session["CountryList"] as IList<CountryModel>; }
+                                @if (countryList != null)
+                                {
+                                    <select id="countries" style="width:50%;">
+                                        <option value="">-- Select --</option>
+                                        @foreach (var country in countryList)
+                                        {
+                                            var countryShortCode = country.CountryCodeAlpha2.ToLower();
+                                            var countryName = country.CountryName;
+                                            <option value="@country.Id" data-image="@Url.Content("~/Content/Images/blank.gif")" data-imagecss="country_flag @countryShortCode" data-title="@countryName">@countryName</option>
+                                        }
+                                    </select>
+                                }
+                            </div>
+                            <div class="col-md-6">
+                                <label>City</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Address.City, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label>State</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Address.State, new { @class = "form-control input-sm" })
+                            </div>
+                            <div class="col-md-6">
+                                <label>Postal Code</label>
+                                @Html.TextBoxFor(model => model.Employee.PersonalInformation.Address.PostalCode, new { @class = "form-control input-sm" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label> Is Active</label>
+                                @Html.CheckBoxFor(model => model.Employee.PersonalInformation.IsActive)
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <input id="btnSavePersonalInfo" type="button" value="Save" class="btn btn-default" />
+                                <input type="button" value="Reset" class="btn btn-default" onclick="return clearPersonalInfoData();" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div id="get-url" data-request-url="@Url.Action("Get", "Employee")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "Employee")"></div>
+<div id="save-url-personal-info" data-request-url="@Url.Action("Save", "PersonalInformation")"></div>
+<div id="list-url" data-request-url="@Url.Action("List", "Employee")"></div>
+
+@Scripts.Render("~/Scripts/HRM/Employee.js")
+
+
+

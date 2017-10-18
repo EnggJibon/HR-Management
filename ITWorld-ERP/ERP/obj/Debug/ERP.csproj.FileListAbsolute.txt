@@ -1,0 +1,404 @@
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\AutoMapper.Net4.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.dll.config
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\AutoMapper.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Security.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Ninject.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Owin.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\RazorJS.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\WebGrease.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\RazorEngine.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Common.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Security.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\AutoMapper.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Ninject.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\bg-BG\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\cs-CZ\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\da-DK\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\de-DE\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\es-ES\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\fr-FR\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\it-IT\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\nl-NL\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\pl-PL\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\pt-BR\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\pt-PT\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ro-RO\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\ru-RU\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\sv-SE\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\tr-TR\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\uk-UA\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\bin\zh-CN\Kendo.Mvc.resources.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.Net4.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll.config
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Owin.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorJS.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\WebGrease.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorEngine.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\bg-BG\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\cs-CZ\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\da-DK\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\de-DE\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\es-ES\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\fr-FR\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\it-IT\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\nl-NL\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pl-PL\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-BR\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-PT\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ro-RO\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ru-RU\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\sv-SE\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\tr-TR\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\uk-UA\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\zh-CN\Kendo.Mvc.resources.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll.config
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Owin.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorJS.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\WebGrease.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorEngine.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\bg-BG\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\cs-CZ\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\da-DK\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\de-DE\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\es-ES\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\fr-FR\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\it-IT\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\nl-NL\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pl-PL\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-BR\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-PT\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ro-RO\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ru-RU\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\sv-SE\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\tr-TR\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\uk-UA\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\zh-CN\Kendo.Mvc.resources.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.Net4.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll.config
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Owin.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorJS.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\WebGrease.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\RazorEngine.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.BLL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Common.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.DAL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.HRM.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Security.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ERP.Utilities.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\AutoMapper.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\EntityFramework.SqlServer.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Kendo.Mvc.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Core.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Cookies.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.OAuth.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Newtonsoft.Json.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Ninject.Web.Common.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Net.Http.Formatting.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Helpers.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Http.WebHost.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Mvc.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Optimization.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.Razor.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Deployment.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\System.Web.WebPages.Razor.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Antlr3.Runtime.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Facebook.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Google.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.Twitter.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\bg-BG\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\cs-CZ\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\da-DK\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\de-DE\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\es-ES\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\fr-FR\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\it-IT\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\nl-NL\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pl-PL\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-BR\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\pt-PT\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ro-RO\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\ru-RU\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\sv-SE\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\tr-TR\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\uk-UA\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\bin\zh-CN\Kendo.Mvc.resources.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP\obj\Debug\ERP.pdb

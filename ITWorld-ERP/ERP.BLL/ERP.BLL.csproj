@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F82FACCF-9C92-4744-805A-5BA16E03BC8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP.BLL</RootNamespace>
+    <AssemblyName>ERP.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreLinq">
+      <HintPath>..\packages\morelinq.1.1.0\lib\net35\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapperBootstrapper.cs" />
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="Common\CountryService.cs" />
+    <Compile Include="Common\IOC\CommonDependencyInjector.cs" />
+    <Compile Include="Common\IOC\CommonRepositoryModule.cs" />
+    <Compile Include="Common\IOC\CommonServiceModule.cs" />
+    <Compile Include="HRM\AddressService.cs" />
+    <Compile Include="HRM\AnnualHolidayCategoryService.cs" />
+    <Compile Include="HRM\AnnualHolidayService.cs" />
+    <Compile Include="HRM\DepartmentService.cs" />
+    <Compile Include="HRM\DesignationService.cs" />
+    <Compile Include="HRM\EmployeeAttendanceInformationService.cs" />
+    <Compile Include="HRM\EmployeeCategoryService.cs" />
+    <Compile Include="HRM\EmployeeEducationalQualificationService.cs" />
+    <Compile Include="HRM\EmployeeEmploymentHistoryService.cs" />
+    <Compile Include="HRM\EmployeeFamilyMemberService.cs" />
+    <Compile Include="HRM\EmployeeHealthInformationService.cs" />
+    <Compile Include="HRM\EmployeeLeaveInformationService.cs" />
+    <Compile Include="HRM\EmployeeNomineeInformationService.cs" />
+    <Compile Include="HRM\EmployeeReferenceInformationService.cs" />
+    <Compile Include="HRM\EmployeeService.cs" />
+    <Compile Include="HRM\IOC\HRMDependencyInjector.cs" />
+    <Compile Include="HRM\IOC\HRMRepositoryModule.cs" />
+    <Compile Include="HRM\IOC\HRMServiceModule.cs" />
+    <Compile Include="HRM\LeaveApprovalStatusService.cs" />
+    <Compile Include="HRM\LeavePolicyService.cs" />
+    <Compile Include="HRM\EmployeeLeaveRequestService.cs" />
+    <Compile Include="HRM\LeaveRequestTypeService.cs" />
+    <Compile Include="HRM\LeaveTypeService.cs" />
+    <Compile Include="HRM\PersonalInformtionService.cs" />
+    <Compile Include="HRM\RosterInformationService.cs" />
+    <Compile Include="HRM\WeekendCategoryService.cs" />
+    <Compile Include="HRM\WeekendService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AccessLogService.cs" />
+    <Compile Include="Security\AdditionalOperationPermissionService.cs" />
+    <Compile Include="Security\AdditionalScreenPermissionService.cs" />
+    <Compile Include="Security\ApplicationPolicyService.cs" />
+    <Compile Include="Security\ApplicationService.cs" />
+    <Compile Include="Security\Authenticator.cs" />
+    <Compile Include="Security\MenuService.cs" />
+    <Compile Include="Security\RoleWiseOperationPermissionService.cs" />
+    <Compile Include="Security\RoleWiseScreenPermissionService.cs" />
+    <Compile Include="Security\ScreenOperationService.cs" />
+    <Compile Include="Security\ScreenService.cs" />
+    <Compile Include="Security\UserTypeService.cs" />
+    <Compile Include="Security\ModuleService.cs" />
+    <Compile Include="Security\RoleService.cs" />
+    <Compile Include="Security\UserInformationService.cs" />
+    <Compile Include="Security\IOC\SecurityDependencyInjector.cs" />
+    <Compile Include="Security\IOC\SecurityRepositoryModule.cs" />
+    <Compile Include="Security\IOC\SecurityServiceModule.cs" />
+    <Compile Include="Security\LoginInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Common\ERP.Common.csproj">
+      <Project>{BE641515-25E3-4F38-9A29-2A41B675A67F}</Project>
+      <Name>ERP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.DAL\ERP.DAL.csproj">
+      <Project>{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}</Project>
+      <Name>ERP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.HRM\ERP.HRM.csproj">
+      <Project>{d076a582-0668-498d-87b0-654c72ede4de}</Project>
+      <Name>ERP.HRM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Security\ERP.Security.csproj">
+      <Project>{92A3A660-3E54-417F-A13E-326C3B221783}</Project>
+      <Name>ERP.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Utilities\ERP.Utilities.csproj">
+      <Project>{96668ac2-4d94-4e44-9eae-a56d51112c3c}</Project>
+      <Name>ERP.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

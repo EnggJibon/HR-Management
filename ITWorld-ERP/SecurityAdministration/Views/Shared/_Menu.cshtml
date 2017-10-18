@@ -1,0 +1,51 @@
+﻿<nav id="menubar" class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>*@
+            <a class="navbar-brand" id="homebtn" href="~/Home"><i class="glyphicon glyphicon-home"></i> Home</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Standing Data Setup<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="applicationLink" href="~/Application">Add Application</a></li>
+                        @*<li><a id="applicationPoliciesLink" href="#">Add Application Policies</a></li>*@
+                        <li><a id="moduleLink" href="~/Module">Add Module</a></li>
+                        <li><a id="roleLink" href="~/Role">Add Role</a></li>
+                        <li><a href="Designation">Add Designation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu &amp; Screen Management<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="menuItemLink" href="~/MenuItem">Add Menu Item</a></li>
+                        <li><a id="screenLink" href="~/Screen">Add Screen</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Administration<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="userLink" href="~/User">Add User</a></li>
+                        <li><a id="userInRoleLink" href="userinrole">User In Role</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Permission &amp; Operation<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="roleWiseScreenPermissionLink" href="~/RoleWiseScreenPermission">Add Role Wise Screen Permission</a></li>
+                        <li><a id="roleAdditionalScreenPermission" href="~/AdditionalScreenPermission">Add Additional Screen Permission</a></li>
+                        <li><a id="roleWiseOperationLink" href="~/RoleWiseOperationPermission">Add Role Wise Operation</a></li>
+                        <li><a id="additionalOperationLink" href="#">Add Additional Operation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

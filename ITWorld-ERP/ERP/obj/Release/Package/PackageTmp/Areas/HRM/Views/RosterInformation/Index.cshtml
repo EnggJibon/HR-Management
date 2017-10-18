@@ -1,0 +1,81 @@
+﻿@using ERP.HRM.ViewModel
+@model RosterInformationViewModel
+
+@{
+    ViewBag.Title = "Roster Setup";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Roster Information
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+            @Html.HiddenFor(model => model.RosterInformation.Id)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Roster Name</label>
+
+                        @Html.TextBoxFor(model => model.RosterInformation.Name, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Description</label>
+                        @Html.TextBoxFor(model => model.RosterInformation.Description, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Start Time</label>
+                        <br />
+                        @Html.TextBoxFor(model => model.RosterInformation.StartTime, new { style = "width: 100%;" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>End Time</label>
+                        <br/>
+                        @Html.TextBoxFor(model => model.RosterInformation.EndTime, new { style = "width: 100%;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.RosterInformation.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Roster Information
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "RosterInformation")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "RosterInformation")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "RosterInformation")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "RosterInformation")"></div>
+
+@Scripts.Render("~/Scripts/HRM/RosterInformation.js")

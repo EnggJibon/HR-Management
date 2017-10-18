@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="ERP_Common">
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="Models.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryCodeAlpha2" ColumnName="CountryCodeAlpha2" />
+          <ScalarProperty Name="CountryCodeAlpha3" ColumnName="CountryCodeAlpha3" />
+          <ScalarProperty Name="CountryCodeNumeric" ColumnName="CountryCodeNumeric" />
+          <ScalarProperty Name="ISOCode" ColumnName="ISOCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

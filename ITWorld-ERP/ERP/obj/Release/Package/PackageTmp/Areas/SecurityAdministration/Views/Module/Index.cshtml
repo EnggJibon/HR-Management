@@ -1,0 +1,75 @@
+﻿@using ERP.Security.ViewModel
+
+@model ModuleViewModel
+
+@{
+    ViewBag.Title = "Module Setup ";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div data-alerts="alerts" id="message" data-titles="{}" data-ids="myid" data-fade="4000"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Module Setup
+            @Html.ValidationSummary(true)
+            @Html.Hidden("hdnIsInsert", true)
+        </div>
+        <div class="panel-body">
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Module Name</label>
+                        @Html.HiddenFor(model => model.Module.Id)
+                        @Html.TextBoxFor(model => model.Module.Name, new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Description</label>
+                        @Html.TextBoxFor(model => model.Module.Description, new { @class = "form-control input-sm" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label>Category</label>
+                        @Html.DropDownListFor(model => model.Module.ApplicationId, Model.ApplicationList, "--Select--", new { @class = "form-control input-sm" })
+                    </div>
+                    <div class="col-md-6">
+                        <label> Is Active</label>
+                        @Html.CheckBoxFor(model => model.Module.IsActive)
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input id="btnSave" type="button" value="Save" class="btn btn-default" />
+                        <input type="button" value="Reset" class="btn btn-default" onclick="return clearData();" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of Module
+    </div>
+    <div class="panel-grid">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div id="list-url" data-request-url="@Url.Action("List", "Module")"></div>
+<div id="get-url" data-request-url="@Url.Action("Get", "Module")"></div>
+<div id="save-url" data-request-url="@Url.Action("Save", "Module")"></div>
+<div id="delete-url" data-request-url="@Url.Action("Delete", "Module")"></div>
+@Scripts.Render("~/Scripts/Security/Module.js")
+
+
+

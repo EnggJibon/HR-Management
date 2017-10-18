@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c8bab62f4dc94944a040dc0ca8b383d9" Name="Diagram1">
+        <EntityTypeShape EntityType="Models.Address" Width="1.5" PointX="7.5" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.AnnualHoliday" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.AnnualHolidayCategory" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Department" Width="1.5" PointX="0.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Designation" Width="1.5" PointX="0.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Employee" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeAttendanceInformation" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeCategory" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeEducationalQualification" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeEmploymentHistory" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeFamilyMember" Width="1.5" PointX="5.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeHealthInformation" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeLeaveInformation" Width="1.5" PointX="8.25" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeLeaveRequest" Width="1.5" PointX="5.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeNomineeInformation" Width="1.5" PointX="5.25" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.EmployeeReferenceInformation" Width="1.5" PointX="5.25" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.LeaveApprovalStatu" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.LeavePolicy" Width="1.5" PointX="6" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.LeaveRequestType" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.LeaveType" Width="1.5" PointX="3" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PersonalInformation" Width="1.5" PointX="5.25" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.RosterInformation" Width="1.5" PointX="0.75" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Weekend" Width="1.5" PointX="8.25" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.WeekendCategory" Width="1.5" PointX="6" PointY="57.875" IsExpanded="true" />
+        <AssociationConnector Association="Models.FK_Address_PersonalInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_AnnualHoliday_AnnualHolidayCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeLeaveInformation_AnnualHolidayCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Employee_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Employee_EmployeeCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Employee_RosterInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeEducationalQualification_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeEmploymentHistory__Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeFamilyMember_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeHealthInformation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeLeaveInformation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeNomineeInformation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeReferenceInformation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_LeaveRequest_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PersonalInformation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeLeaveInformation_LeavePolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeLeaveInformation_WeekendCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_EmployeeLeaveRequest_LeaveApprovalStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_LeaveRequest_LeaveType" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_LeaveType_LeavePolicy" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Weekend_WeekendCategory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

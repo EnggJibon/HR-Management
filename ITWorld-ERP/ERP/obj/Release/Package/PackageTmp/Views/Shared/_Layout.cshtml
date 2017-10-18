@@ -1,0 +1,143 @@
+﻿@using ERP.BLL.Security
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/Scripts/Library/jquery-2.1.1.min.js")
+    @Scripts.Render("~/Scripts/Library/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/Library/jquery-ui.min.js")
+    @Scripts.Render("~/Scripts/General/MessageContainer.js")
+    @Scripts.Render("~/Scripts/Library/jquery.bsAlerts.js")
+    @Scripts.Render("~/Scripts/Library/intlTelInput.min.js")
+    @Scripts.Render("~/Scripts/Library/jquery.dd.min.js")
+
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.default.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.1.528/kendo.dataviz.default.min.css")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("~/Scripts/kendo/2014.1.528/kendo.web.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.1.528/kendo.aspnetmvc.min.js")"></script>
+</head>
+
+<body data-offset="40">
+    <header>
+        <div id="header-roof">
+            <div class="container content">
+                <div class="col-md-12" style="padding:0px;">
+                    <div class="col-md-2" style="margin-top: -15px; padding:0px;">
+                        <img src="~/Content/Images/logo.png" />
+                    </div>
+                    <div class="col-md-5" style="margin:7px 0px 0px 0px;">
+                        <h3 style="color: rgba(223, 44, 44, 0.42); text-shadow: 0 1px rgb(248, 4, 4); margin-left: 5px;">Enterprise Resource Planning</h3>
+                    </div>
+                    <div class="col-md-5 pull-right" style="text-align: right; padding: 13px 0px 0px 0px;">
+                        <a href="#">Help</a>
+                        <span class="bar">|</span>
+                        @if (Session["IsLogged"] != null && Convert.ToBoolean(Session["IsLogged"]))
+                        {
+                            @Html.Partial("_LogoutPanel")
+                            if (LoginInformation.IsApprover)
+                            {
+                                <div class="approver-request-link">
+                                    <a href="@Url.Action("IncomingLeaveRequest", "EmployeeLeaveRequest", new { area = "HRM" })"><span class="approver-link">You have <b>@LoginInformation.IncomingLeaveRequest</b> request(s) to approve</span></a>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            @Html.Partial("_LoginPanel")
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-menu">
+            <div class="container content">
+                <div class="col-md-12" style="padding:0px;">
+                    @if (Convert.ToBoolean(Session["IsLogged"]))
+                    {
+                        Html.RenderPartial("_Menu");
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#middle .content').css('margin-top', '105px');
+                            });
+                        </script>
+                    }
+                    else
+                    {
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#middle .content').css('margin-top', '70px');
+                            });
+                        </script>
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="middle">
+        <div class="container content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-upper">
+            <div class="container content">
+                <fieldset class="form-horizontal">
+                    <div class="form-group col-md-12">
+                        <div class="col-md-4">
+                            <h3>Key Features</h3>
+                            <p>
+                                <ul>
+                                    <li>Manufacturing</li>
+                                    <li>Supply chain management</li>
+                                    <li>Financial management</li>
+                                    <li>Project management</li>
+                                    <li>Human resources/ human capital management</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Why Use ERP</h3>
+                            <p>
+                                - Efficient completion of everyday activities. <br />
+                                - Reduction of overhead costs.<br />
+                                - Elimination of data silos through the formulation of a single, centralized and accurate company data.<br />
+                                - Standardization of critical procedures to reduce redundant tasks that waste time and money.<br />
+                                - Accurate assessment of business needs to improve strategic planning.<br />
+                                - Improved resource management and allocation.
+                            </p>
+                        </div>
+                        <div class="col-md-2">
+                            <h3>Site Link</h3>
+                            <p>
+                                <a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">About Us</a>
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div id="footer-lower">
+            <div class="container content" style="text-align: center">
+                @*<img src="~/Content/Images/itworld_logo.png" />&nbsp;&nbsp;*@
+                &copy; <a href="http://itworldbd.net/" target="_blank">IT-World @DateTime.Now.Year. </a> All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document);
+        $(document).ready(function () {
+            $('.myElementClass').css('text-align', 'center');
+        });
+    </script>
+</body>
+</html>

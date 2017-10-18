@@ -1,0 +1,152 @@
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.Net4.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll.config
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.pdb
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.csprojResolveAssemblyReference.cache
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.dll
+G:\IT World BD\Mapple ERP Application (TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.Net4.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll.config
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.pdb
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.csprojResolveAssemblyReference.cache
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.dll
+G:\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll.config
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.csprojResolveAssemblyReference.cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.Net4.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll.config
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.BLL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Common.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.DAL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.HRM.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Security.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\ERP.Utilities.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\AutoMapper.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\MoreLinq.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\Ninject.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Helpers.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Mvc.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.Razor.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.csprojResolveAssemblyReference.cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\Mapple ERP Application (Working Version in TFS)\ITWorld-ERP\ERP.BLL\obj\Debug\ERP.BLL.pdb

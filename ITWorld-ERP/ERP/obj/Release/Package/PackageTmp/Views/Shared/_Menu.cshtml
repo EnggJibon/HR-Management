@@ -1,0 +1,173 @@
+﻿<link href="~/Content/icomoon.css" rel="stylesheet" />
+@using ERP.BLL.Security
+@using ERP.Security.Domain
+@using MoreLinq
+@{
+    var permittedMenuList = LoginInformation.PermittedMenues;
+    if (permittedMenuList != null)
+    {
+        <nav id="menubar" class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" id="homebtn" href="~/Views/Home/Index.cshtml"><i class="icomoon-library-2"></i>Home</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    @{
+                        var modules = permittedMenuList.OrderBy(s => s.MenuOrder).GroupBy(s => s.ParentMenuId);
+                        var enumerable = modules as IList<IGrouping<long?, MenuModel>> ?? modules.ToList();
+                        foreach (var module in enumerable[0])
+                        {
+                            var subModules = enumerable.SingleOrDefault(w => w.Key == module.Id);
+                            if (subModules != null)
+                            {
+                                <li class="dropdown">
+                                    @{
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class=@module.MenuIcon></i>
+                                            @module.Name<b class="caret"></b>
+                                        </a>
+                                    }
+                                    <ul class="dropdown-menu">
+                                        @foreach (var subModule in subModules)
+                                        {
+                                            <li class="dropdown-submenu">
+                                                <a tabindex="-1" href="#"><i class=@subModule.MenuIcon></i>@subModule.Name</a>
+                                                @{
+                                                    var menus = enumerable.SingleOrDefault(w => w.Key == subModule.Id);
+                                                    if (menus != null)
+                                                    {
+                                                        <ul class="dropdown-menu">
+                                                            @foreach (var menu in menus.DistinctBy(m=>m.Id))
+                                                            {
+                                                                <li>
+                                                                    <a href="@menu.Screen.URL"><i class=@menu.MenuIcon></i>@menu.Name</a>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    }
+                                                }
+                                            </li>
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+            </div>
+        </nav>
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @*<nav id="menubar" class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" id="homebtn" href="~/Home"><i class="glyphicon glyphicon-home"></i> Home</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Standing Data Setup<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="applicationLink" href="~/Application">Add Application</a></li>
+                                <li><a id="moduleLink" href="~/Module">Add Module</a></li>
+                                <li><a id="roleLink" href="~/Role">Add Role</a></li>
+                                <li><a href="Designation">Add Designation</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu &amp; Screen Management<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="menuItemLink" href="~/MenuItem">Add Menu Item</a></li>
+                                <li><a id="screenLink" href="~/Screen">Add Screen</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Administration<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="userLink" href="~/User">Add User</a></li>
+                                <li><a id="userInRoleLink" href="userinrole">User In Role</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Permission &amp; Operation<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="roleWiseScreenPermissionLink" href="~/RoleWiseScreenPermission">Add Role Wise Screen Permission</a></li>
+                                <li><a id="roleAdditionalScreenPermission" href="~/AdditionalScreenPermission">Add Additional Screen Permission</a></li>
+                                <li><a id="roleWiseOperationLink" href="~/RoleWiseOperationPermission">Add Role Wise Operation</a></li>
+                                <li><a id="additionalOperationLink" href="#">Add Additional Operation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+

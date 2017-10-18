@@ -1,0 +1,136 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityAdministration", "SecurityAdministration\SecurityAdministration.csproj", "{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.DAL", "ERP.DAL\ERP.DAL.csproj", "{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Utilities", "ERP.Utilities\ERP.Utilities.csproj", "{96668AC2-4D94-4E44-9EAE-A56D51112C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.BLL", "ERP.BLL\ERP.BLL.csproj", "{F82FACCF-9C92-4744-805A-5BA16E03BC8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.HRM", "ERP.HRM\ERP.HRM.csproj", "{D076A582-0668-498D-87B0-654C72EDE4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP", "ERP\ERP.csproj", "{5A1D7CA4-A616-430B-915A-087EFED26BDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92A3A660-3E54-417F-A13E-326C3B221783} = {92A3A660-3E54-417F-A13E-326C3B221783}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DE0F3519-BCD2-4456-B240-42ECF740396D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{C805E105-7259-4C8A-8BDD-A0F5578E2BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WEB", "WEB", "{BE4E7D27-93FB-43C7-93C4-4CC1DBD5186E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{0C5C09B4-72F7-40C9-9255-B93FA74D1F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Security", "ERP.Security\ERP.Security.csproj", "{92A3A660-3E54-417F-A13E-326C3B221783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Common", "ERP.Common\ERP.Common.csproj", "{BE641515-25E3-4F38-9A29-2A41B675A67F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APP", "APP", "{BA660959-2383-4D2D-B7A1-B7D772C896AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceTracker", "AttendanceTracker\AttendanceTracker.csproj", "{57E334DE-7C9B-4732-A2B8-E60136A8E80D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://it-worldbd.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SecurityAdministration\\SecurityAdministration.csproj
+		SccProjectTopLevelParentUniqueName1 = ITWorld-ERP.sln
+		SccProjectName1 = SecurityAdministration
+		SccLocalPath1 = SecurityAdministration
+		SccProjectUniqueName2 = ERP.DAL\\ERP.DAL.csproj
+		SccProjectTopLevelParentUniqueName2 = ITWorld-ERP.sln
+		SccProjectName2 = ERP.DAL
+		SccLocalPath2 = ERP.DAL
+		SccProjectUniqueName3 = ERP.Utilities\\ERP.Utilities.csproj
+		SccProjectTopLevelParentUniqueName3 = ITWorld-ERP.sln
+		SccProjectName3 = ERP.Utilities
+		SccLocalPath3 = ERP.Utilities
+		SccProjectUniqueName4 = ERP.BLL\\ERP.BLL.csproj
+		SccProjectTopLevelParentUniqueName4 = ITWorld-ERP.sln
+		SccProjectName4 = ERP.BLL
+		SccLocalPath4 = ERP.BLL
+		SccProjectUniqueName5 = ERP.HRM\\ERP.HRM.csproj
+		SccProjectTopLevelParentUniqueName5 = ITWorld-ERP.sln
+		SccProjectName5 = ERP.HRM
+		SccLocalPath5 = ERP.HRM
+		SccProjectUniqueName6 = ERP\\ERP.csproj
+		SccProjectTopLevelParentUniqueName6 = ITWorld-ERP.sln
+		SccProjectName6 = ERP
+		SccLocalPath6 = ERP
+		SccProjectUniqueName7 = ERP.Security\\ERP.Security.csproj
+		SccProjectTopLevelParentUniqueName7 = ITWorld-ERP.sln
+		SccProjectName7 = ERP.Security
+		SccLocalPath7 = ERP.Security
+		SccProjectUniqueName8 = ERP.Common\\ERP.Common.csproj
+		SccProjectTopLevelParentUniqueName8 = ITWorld-ERP.sln
+		SccProjectName8 = ERP.Common
+		SccLocalPath8 = ERP.Common
+		SccProjectUniqueName9 = AttendanceTracker\\AttendanceTracker.csproj
+		SccProjectTopLevelParentUniqueName9 = ITWorld-ERP.sln
+		SccProjectName9 = AttendanceTracker
+		SccLocalPath9 = AttendanceTracker
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96668AC2-4D94-4E44-9EAE-A56D51112C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96668AC2-4D94-4E44-9EAE-A56D51112C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96668AC2-4D94-4E44-9EAE-A56D51112C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96668AC2-4D94-4E44-9EAE-A56D51112C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82FACCF-9C92-4744-805A-5BA16E03BC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82FACCF-9C92-4744-805A-5BA16E03BC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82FACCF-9C92-4744-805A-5BA16E03BC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82FACCF-9C92-4744-805A-5BA16E03BC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D076A582-0668-498D-87B0-654C72EDE4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D076A582-0668-498D-87B0-654C72EDE4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D076A582-0668-498D-87B0-654C72EDE4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D076A582-0668-498D-87B0-654C72EDE4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1D7CA4-A616-430B-915A-087EFED26BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1D7CA4-A616-430B-915A-087EFED26BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1D7CA4-A616-430B-915A-087EFED26BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1D7CA4-A616-430B-915A-087EFED26BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A3A660-3E54-417F-A13E-326C3B221783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A3A660-3E54-417F-A13E-326C3B221783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A3A660-3E54-417F-A13E-326C3B221783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A3A660-3E54-417F-A13E-326C3B221783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE641515-25E3-4F38-9A29-2A41B675A67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE641515-25E3-4F38-9A29-2A41B675A67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE641515-25E3-4F38-9A29-2A41B675A67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE641515-25E3-4F38-9A29-2A41B675A67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E334DE-7C9B-4732-A2B8-E60136A8E80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E334DE-7C9B-4732-A2B8-E60136A8E80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E334DE-7C9B-4732-A2B8-E60136A8E80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E334DE-7C9B-4732-A2B8-E60136A8E80D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A1D7CA4-A616-430B-915A-087EFED26BDF} = {BE4E7D27-93FB-43C7-93C4-4CC1DBD5186E}
+		{3AF7A7D2-56E3-4CD1-8F60-A53A857DC95B} = {BE4E7D27-93FB-43C7-93C4-4CC1DBD5186E}
+		{1A6D5DF6-B13C-4C1D-B3A0-FD4493AE04B3} = {DE0F3519-BCD2-4456-B240-42ECF740396D}
+		{96668AC2-4D94-4E44-9EAE-A56D51112C3C} = {0C5C09B4-72F7-40C9-9255-B93FA74D1F42}
+		{D076A582-0668-498D-87B0-654C72EDE4DE} = {C805E105-7259-4C8A-8BDD-A0F5578E2BA2}
+		{F82FACCF-9C92-4744-805A-5BA16E03BC8F} = {C805E105-7259-4C8A-8BDD-A0F5578E2BA2}
+		{92A3A660-3E54-417F-A13E-326C3B221783} = {C805E105-7259-4C8A-8BDD-A0F5578E2BA2}
+		{BE641515-25E3-4F38-9A29-2A41B675A67F} = {C805E105-7259-4C8A-8BDD-A0F5578E2BA2}
+		{57E334DE-7C9B-4732-A2B8-E60136A8E80D} = {BA660959-2383-4D2D-B7A1-B7D772C896AF}
+	EndGlobalSection
+EndGlobal
